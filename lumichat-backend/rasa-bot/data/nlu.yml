@@ -1,0 +1,3125 @@
+version: "3.1"
+nlu:
+
+- intent: greet
+  examples: |
+    - hi
+    - hello
+    - hey
+    - good morning
+    - good afternoon
+    - good evening
+
+- intent: finish
+  examples: |
+    - humana
+    - done na
+    - Done
+    - ok na
+    - mana
+    - done
+
+- intent: thanks
+  examples: |
+    - thanks
+    - thanks you
+    - Thanks
+    - Salamat
+    - salamat kaayu
+    - salamat lumichat
+    - Salamat Lumichat
+
+- intent: goodbye
+  examples: |
+    - bye
+    - goodbye
+    - see you
+    - thanks, bye
+    - talk to you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - yep
+    - yeah
+    - sure
+    - okay
+    - go ahead
+    - please do
+    - sounds good
+
+- intent: deny
+  examples: |
+    - no
+    - nope
+    - not now
+    - no thanks
+    - don't
+    - cancel
+    - stop
+    - I'd rather not
+
+- intent: book_appointment
+  examples: |
+    - I want to book an appointment
+    - I want to book a appointment
+    - I want to book appointment
+    - I need to schedule a session with a counselor
+    - Can I set up a counseling appointment?
+    - I would like to book a time to talk to a counselor
+    - book an appointment
+    - book appointment
+    - gusto ko makig storya sa counselor
+    - gusto ko magpa appointment
+
+- intent: anxiety/p0001
+  examples: |
+    - I feel anxious all the time.
+    - I feel anxious all the time
+    - I feel anxious.
+    - Im anxious
+    - I'm anxious
+    - I am anxious
+    - I get anxious easily.
+
+- intent: anxiety/p0002
+  examples: |
+    - I worry about things a lot.
+
+- intent: anxiety/p0003
+  examples: |
+    - I get nervous before presentations.
+
+- intent: anxiety/p0004
+  examples: |
+    - My heart races when I have to speak in class.
+
+- intent: anxiety/p0005
+  examples: |
+    - I can’t control my anxiety.
+
+- intent: anxiety/p0006
+  examples: |
+    - I feel tense even when nothing is wrong.
+
+- intent: anxiety/p0007
+  examples: |
+    - I panic before exams.
+
+- intent: anxiety/p0008
+  examples: |
+    - I’m afraid something bad will happen.
+
+- intent: anxiety/p0009
+  examples: |
+    - I avoid social situations because of anxiety.
+
+- intent: anxiety/p0010
+  examples: |
+    - I overthink everything.
+
+- intent: anxiety/p0011
+  examples: |
+    - I’m anxious about my future.
+
+- intent: anxiety/p0012
+  examples: |
+    - I feel sick when I’m nervous.
+
+- intent: anxiety/p0013
+  examples: |
+    - My mind goes blank when I’m anxious.
+
+- intent: anxiety/p0014
+  examples: |
+    - I can’t relax at night because I’m worrying.
+
+- intent: anxiety/p0015
+  examples: |
+    - My anxiety keeps me from enjoying things.
+
+- intent: anxiety/p0016
+  examples: |
+    - I dread going to crowded places like the cafeteria.
+
+- intent: anxiety/p0017
+  examples: |
+    - Lately, my chest feels tight whenever I have a lot on my mind.
+
+- intent: anxiety/p0018
+  examples: |
+    - I keep replaying awkward moments in my head and it makes me more anxious.
+
+- intent: anxiety/p0019
+  examples: |
+    - My thoughts race so fast I can’t keep up with them.
+
+- intent: anxiety/p0020
+  examples: |
+    - I get anxious even during happy moments, and I don’t know why.
+
+- intent: anxiety/p0021
+  examples: |
+    - I’m scared I’ll disappoint my family if I fail.
+
+- intent: anxiety/p0022
+  examples: |
+    - I feel on edge all day, like something bad is going to happen.
+
+- intent: anxiety/p0023
+  examples: |
+    - Sometimes my anxiety makes it hard to breathe.
+
+- intent: anxiety/p0024
+  examples: |
+    - I keep checking if I locked the door because I’m so anxious.
+
+- intent: anxiety/p0025
+  examples: |
+    - My friends don’t understand how anxious I get about social events.
+
+- intent: anxiety/p0026
+  examples: |
+    - I feel butterflies in my stomach before any big event.
+
+- intent: anxiety/p0027
+  examples: |
+    - I can’t stop fidgeting when I’m nervous.
+
+- intent: anxiety/p0028
+  examples: |
+    - I always think people are judging me, even if they aren’t.
+
+- intent: anxiety/p0029
+  examples: |
+    - My heart feels like it’s pounding out of my chest when I get nervous.
+
+- intent: anxiety/p0030
+  examples: |
+    - I feel like I can’t escape my worries, even when I’m trying to relax.
+
+- intent: anxiety/p0031
+  examples: |
+    - I get headaches when I’m feeling anxious.
+
+- intent: anxiety/p0032
+  examples: |
+    - I’m afraid I’ll make mistakes and everyone will notice.
+
+- intent: anxiety/p0033
+  examples: |
+    - My appetite changes when I’m anxious—sometimes I can’t eat, other times I overeat.
+
+- intent: anxiety/p0034
+  examples: |
+    - I struggle to make decisions because I worry about making the wrong choice.
+
+- intent: anxiety/p0035
+  examples: |
+    - I feel like I’m not good enough compared to others.
+
+- intent: anxiety/p0036
+  examples: |
+    - My mind races at night and I can’t sleep.
+
+- intent: anxiety/p0037
+  examples: |
+    - I feel like I can’t trust my own judgment.
+
+- intent: anxiety/p0038
+  examples: |
+    - I feel disconnected from reality when my anxiety is high.
+
+- intent: anxiety/p0039
+  examples: |
+    - I keep imagining worst-case scenarios.
+
+- intent: anxiety/p0040
+  examples: |
+    - I get nauseous when I’m nervous.
+
+- intent: anxiety/p0041
+  examples: |
+    - My anxiety makes it hard to start new projects.
+
+- intent: anxiety/p0042
+  examples: |
+    - I find myself apologizing constantly because I’m afraid of upsetting people.
+
+- intent: anxiety/p0043
+  examples: |
+    - I lose my train of thought easily when anxious.
+
+- intent: anxiety/p0044
+  examples: |
+    - I get anxious when people raise their voices, even if it’s not at me.
+
+- intent: anxiety/p0045
+  examples: |
+    - I can’t seem to relax, no matter what I do.
+
+- intent: anxiety/p0046
+  examples: |
+    - My legs shake when I’m nervous.
+
+- intent: anxiety/p0047
+  examples: |
+    - I’m afraid to ask for help because I don’t want to be a burden.
+
+- intent: anxiety/p0048
+  examples: |
+    - I feel like people are watching my every move.
+
+- intent: anxiety/p0049
+  examples: |
+    - I freeze up when someone asks me a question I’m not expecting.
+
+- intent: anxiety/p0050
+  examples: |
+    - I get anxious when someone disagrees with me.
+
+- intent: anxiety/p0051
+  examples: |
+    - I feel exhausted after socializing, even if it went well.
+
+- intent: anxiety/p0052
+  examples: |
+    - My anxiety makes it hard to concentrate in class.
+
+- intent: anxiety/p0053
+  examples: |
+    - I get anxious when my phone rings unexpectedly.
+
+- intent: anxiety/p0054
+  examples: |
+    - I feel like I always need to be in control.
+
+- intent: anxiety/p0055
+  examples: |
+    - I worry that if I relax, something will go wrong.
+
+- intent: anxiety/p0056
+  examples: |
+    - I get anxious when plans change at the last minute.
+
+- intent: anxiety/p0057
+  examples: |
+    - I can’t enjoy hobbies because I’m too anxious to start.
+
+- intent: anxiety/p0058
+  examples: |
+    - My thoughts keep going back to embarrassing moments from years ago.
+
+- intent: anxiety/p0059
+  examples: |
+    - I get anxious if I forget something, even if it’s small.
+
+- intent: anxiety/p0060
+  examples: |
+    - I’m afraid to try new things because I might fail.
+
+- intent: anxiety/p0061
+  examples: |
+    - My hands get cold and sweaty when I’m nervous.
+
+- intent: anxiety/p0062
+  examples: |
+    - I get anxious when people talk about the future.
+
+- intent: anxiety/p0063
+  examples: |
+    - I feel overwhelmed when I have to make a schedule.
+
+- intent: anxiety/p0064
+  examples: |
+    - I get anxious when I have to meet new people online.
+
+
+
+
+
+
+
+
+
+
+- intent: depression/p0001
+  examples: |
+    - I feel empty inside.
+
+- intent: depression/p0002
+  examples: |
+    - I can’t focus on my studies.
+
+- intent: depression/p0003
+  examples: |
+    - I feel worthless.
+
+- intent: depression/p0004
+  examples: |
+    - My grades are dropping because I feel sad.
+
+- intent: depression/p0005
+  examples: |
+    - I don’t care about anything anymore.
+
+- intent: depression/p0006
+  examples: |
+    - I feel numb and disconnected from everything.
+
+- intent: depression/p0007
+  examples: |
+    - I find it hard to talk to anyone about how I feel.
+
+- intent: depression/p0008
+  examples: |
+    - I think my friends would be better off without me.
+
+- intent: depression/p0009
+  examples: |
+    - I keep sleeping during the day.
+
+- intent: depression/p0010
+  examples: |
+    - I can’t find the energy to do basic things like showering or eating.
+
+- intent: depression/p0011
+  examples: |
+    - I don’t want to get out of the house anymore.
+
+- intent: depression/p0012
+  examples: |
+    - I feel stuck and nothing ever changes.
+
+- intent: depression/p0013
+  examples: |
+    - I’m constantly irritable and snap at people for no reason.
+
+- intent: depression/p0014
+  examples: |
+    - I feel like everything is pointless.
+
+- intent: depression/p0015
+  examples: |
+    - I have trouble making decisions, even about small things.
+
+- intent: depression/p0016
+  examples: |
+    - I avoid my friends and family.
+
+- intent: depression/p0017
+  examples: |
+    - My body aches for no reason.
+
+- intent: depression/p0018
+  examples: |
+    - I lost interest in my studies and school activities.
+
+- intent: depression/p0019
+  examples: |
+    - I feel overwhelmed by little things.
+
+- intent: depression/p0020
+  examples: |
+    - I feel guilty all the time, even when I haven’t done anything wrong.
+
+- intent: depression/p0021
+  examples: |
+    - I have no appetite and skip meals.
+
+- intent: depression/p0022
+  examples: |
+    - I gained weight because I can’t stop eating when I’m sad.
+
+- intent: depression/p0023
+  examples: |
+    - I feel anxious and sad at the same time.
+
+- intent: depression/p0024
+  examples: |
+    - I feel like I’m moving in slow motion.
+
+- intent: depression/p0025
+  examples: |
+    - I’m tired of pretending to be okay around everyone.
+
+- intent: depression/p0026
+  examples: |
+    - I feel like I’ll never get better.
+
+- intent: depression/p0027
+  examples: |
+    - I feel isolated even when I’m with people.
+
+- intent: depression/p0028
+  examples: |
+    - I can’t finish tasks because I lose interest halfway through.
+
+- intent: depression/p0029
+  examples: |
+    - I avoid looking in the mirror because I don’t like myself.
+
+- intent: depression/p0030
+  examples: |
+    - I get headaches and stomachaches when I’m sad.
+
+- intent: depression/p0031
+  examples: |
+    - I don’t see the point in making plans for the future.
+
+- intent: depression/p0032
+  examples: |
+    - I push people away even when I want support.
+
+- intent: depression/p0033
+  examples: |
+    - I feel like crying all the time.
+
+- intent: depression/p0034
+  examples: |
+    - I have trouble remembering things lately.
+
+- intent: depression/p0035
+  examples: |
+    - I get angry easily and then feel guilty about it.
+
+- intent: depression/p0036
+  examples: |
+    - I don’t recognize myself anymore.
+
+- intent: depression/p0037
+  examples: |
+    - I’m afraid to tell anyone how I feel.
+
+- intent: depression/p0038
+  examples: |
+    - I have nightmares or trouble sleeping.
+
+- intent: depression/p0039
+  examples: |
+    - I feel like giving up on everything.
+
+- intent: depression/p0040
+  examples: |
+    - I feel down most days and can’t seem to shake it.
+
+- intent: depression/p0041
+  examples: |
+    - I have no motivation to do anything lately.
+
+- intent: depression/p0042
+  examples: |
+    - I feel hopeless about my future.
+
+- intent: depression/p0043
+  examples: |
+    - I don’t enjoy the things I used to like.
+
+- intent: depression/p0044
+  examples: |
+    - I feel tired all the time, even after sleeping.
+
+- intent: depression/p0045
+  examples: |
+    - Nothing makes me happy anymore.
+
+- intent: depression/p0046
+  examples: |
+    - I want to be alone most of the time.
+
+- intent: depression/p0047
+  examples: |
+    - I cry for no reason.
+
+- intent: depression/p0048
+  examples: |
+    - I feel like I’m a burden to others.
+
+- intent: depression/p0049
+  examples: |
+    - I have trouble getting out of bed.
+
+
+
+
+
+
+
+
+- intent: stress/p0001
+  examples: |
+    - I feel overwhelmed by everything I need to do.
+
+- intent: stress/p0002
+  examples: |
+    - My schoolwork is piling up and I can’t keep up.
+
+- intent: stress/p0003
+  examples: |
+    - I’m under so much pressure to do well in my classes.
+
+- intent: stress/p0004
+  examples: |
+    - I can’t sleep because I’m always thinking about deadlines.
+
+- intent: stress/p0005
+  examples: |
+    - I get headaches when I’m stressed out.
+
+- intent: stress/p0006
+  examples: |
+    - I feel like I’m always running out of time.
+
+- intent: stress/p0007
+  examples: |
+    - My heart races when I think about everything I have to do.
+
+- intent: stress/p0008
+  examples: |
+    - I can’t focus on anything because I’m too stressed.
+
+- intent: stress/p0009
+  examples: |
+    - I get angry over small things when I’m stressed.
+
+- intent: stress/p0010
+  examples: |
+    - I have trouble eating when I’m stressed.
+
+- intent: stress/p0011
+  examples: |
+    - I feel exhausted but can’t seem to relax.
+
+- intent: stress/p0012
+  examples: |
+    - My family expects a lot from me and it stresses me out.
+
+- intent: stress/p0013
+  examples: |
+    - I get stomachaches when I’m stressed.
+
+- intent: stress/p0014
+  examples: |
+    - I feel like I’m always behind, no matter what I do.
+
+- intent: stress/p0015
+  examples: |
+    - I can’t say no when people ask me for help, and it stresses me out.
+
+- intent: stress/p0016
+  examples: |
+    - I cry when I get too stressed.
+
+- intent: stress/p0017
+  examples: |
+    - I feel like there’s never enough time in the day.
+
+- intent: stress/p0018
+  examples: |
+    - My hands get sweaty when I’m stressed out.
+
+- intent: stress/p0019
+  examples: |
+    - I forget things easily when I’m stressed.
+
+- intent: stress/p0020
+  examples: |
+    - I feel tense in my shoulders and neck when I’m stressed.
+
+- intent: stress/p0021
+  examples: |
+    - I get overwhelmed when my plans change unexpectedly.
+
+- intent: stress/p0022
+  examples: |
+    - I can’t relax, even when I try to take a break.
+
+- intent: stress/p0023
+  examples: |
+    - I get easily frustrated with people around me.
+
+- intent: stress/p0024
+  examples: |
+    - I eat too much junk food when I’m stressed.
+
+- intent: stress/p0025
+  examples: |
+    - I worry about letting people down.
+
+- intent: stress/p0026
+  examples: |
+    - I can’t sit still when I’m stressed.
+
+- intent: stress/p0027
+  examples: |
+    - I feel pressure to be perfect in everything I do.
+
+- intent: stress/p0028
+  examples: |
+    - I get short with my friends when I’m stressed.
+
+- intent: stress/p0029
+  examples: |
+    - I have trouble enjoying things I used to like when I’m stressed.
+
+- intent: stress/p0030
+  examples: |
+    - My mind goes blank when I’m under pressure.
+
+- intent: stress/p0031
+  examples: |
+    - I keep getting sick when I’m stressed.
+
+- intent: stress/p0032
+  examples: |
+    - I worry about the future all the time.
+
+- intent: stress/p0033
+  examples: |
+    - I have trouble asking for help when I’m stressed.
+
+- intent: stress/p0034
+  examples: |
+    - I feel drained after being around people.
+
+- intent: stress/p0035
+  examples: |
+    - I start projects but can’t finish them when I’m stressed.
+
+- intent: stress/p0036
+  examples: |
+    - I get tension headaches when I have too much to do.
+
+- intent: stress/p0037
+  examples: |
+    - I get irritable when I haven’t had enough sleep because of stress.
+
+- intent: stress/p0038
+  examples: |
+    - I feel like there’s no way to catch up.
+
+- intent: stress/p0039
+  examples: |
+    - I have trouble breathing deeply when I’m stressed.
+
+- intent: stress/p0040
+  examples: |
+    - I lose my appetite when I’m stressed.
+
+- intent: stress/p0041
+  examples: |
+    - I feel like crying for no reason when I’m stressed.
+
+- intent: stress/p0042
+  examples: |
+    - My thoughts keep racing and I can’t slow down.
+
+- intent: stress/p0043
+  examples: |
+    - I feel pressure from my family to succeed.
+
+- intent: stress/p0044
+  examples: |
+    - I get shaky or my hands tremble when I’m stressed.
+
+- intent: stress/p0045
+  examples: |
+    - I keep making mistakes because I’m too stressed to think straight.
+
+- intent: stress/p0046
+  examples: |
+    - I get anxious when people expect too much from me.
+
+- intent: stress/p0047
+  examples: |
+    - I have trouble enjoying my weekends because I’m still stressed about school.
+
+- intent: stress/p0048
+  examples: |
+    - I find it hard to make decisions when I’m stressed.
+
+- intent: stress/p0049
+  examples: |
+    - I clench my jaw or grind my teeth when I’m stressed.
+
+
+
+
+
+
+
+
+
+- intent: academic_pressure/p0001
+  examples: |
+    - I feel like everyone expects me to get high grades.
+
+- intent: academic_pressure/p0002
+  examples: |
+    - The pressure to maintain my scholarship is too much.
+
+- intent: academic_pressure/p0003
+  examples: |
+    - I’m scared I’ll disappoint my parents if I don’t do well.
+
+- intent: academic_pressure/p0004
+  examples: |
+    - There’s so much competition in my course, I feel left behind.
+
+- intent: academic_pressure/p0005
+  examples: |
+    - I feel guilty when I relax instead of studying.
+
+- intent: academic_pressure/p0006
+  examples: |
+    - I can’t keep up with all my subjects.
+
+- intent: academic_pressure/p0007
+  examples: |
+    - I feel pressured to be at the top of my class.
+
+- intent: academic_pressure/p0008
+  examples: |
+    - My classmates seem to understand things faster than me.
+
+- intent: academic_pressure/p0009
+  examples: |
+    - I always worry about failing exams.
+
+- intent: academic_pressure/p0010
+  examples: |
+    - My family keeps asking about my grades.
+
+- intent: academic_pressure/p0011
+  examples: |
+    - I feel like I don’t have time for anything except studying.
+
+- intent: academic_pressure/p0012
+  examples: |
+    - I’m afraid my friends will judge me if I get low grades.
+
+- intent: academic_pressure/p0013
+  examples: |
+    - I’m overwhelmed by all the deadlines and projects.
+
+- intent: academic_pressure/p0014
+  examples: |
+    - I’m stressed about meeting my professors’ expectations.
+
+- intent: academic_pressure/p0015
+  examples: |
+    - I feel like I have to be perfect to succeed.
+
+- intent: academic_pressure/p0016
+  examples: |
+    - My parents compare me to other students.
+
+- intent: academic_pressure/p0017
+  examples: |
+    - I’m worried I won’t finish all my assignments on time.
+
+- intent: academic_pressure/p0018
+  examples: |
+    - I’m losing motivation to study because of so much pressure.
+
+- intent: academic_pressure/p0019
+  examples: |
+    - I keep thinking about school even during weekends.
+
+- intent: academic_pressure/p0020
+  examples: |
+    - I feel sick whenever there’s a big test coming up.
+
+- intent: academic_pressure/p0021
+  examples: |
+    - My classmates keep talking about grades, which stresses me out.
+
+- intent: academic_pressure/p0022
+  examples: |
+    - I get nervous just seeing my school portal or grades online.
+
+- intent: academic_pressure/p0023
+  examples: |
+    - I feel like I’m never good enough academically.
+
+- intent: academic_pressure/p0024
+  examples: |
+    - I can’t keep up with online classes and assignments.
+
+- intent: academic_pressure/p0025
+  examples: |
+    - I feel like everyone is expecting me to succeed.
+
+- intent: academic_pressure/p0026
+  examples: |
+    - I can’t enjoy hobbies because I’m always worried about school.
+
+- intent: academic_pressure/p0027
+  examples: |
+    - I get anxious before submitting any assignment.
+
+- intent: academic_pressure/p0028
+  examples: |
+    - I’m always comparing my performance with others.
+
+- intent: academic_pressure/p0029
+  examples: |
+    - I feel like I can’t ask questions in class because I might look stupid.
+
+- intent: academic_pressure/p0030
+  examples: |
+    - My parents have high expectations for me.
+
+- intent: academic_pressure/p0031
+  examples: |
+    - I feel mentally exhausted from all the academic demands.
+
+- intent: academic_pressure/p0032
+  examples: |
+    - I get headaches thinking about unfinished schoolwork.
+
+- intent: academic_pressure/p0033
+  examples: |
+    - I’m scared to fail because everyone will know.
+
+- intent: academic_pressure/p0034
+  examples: |
+    - I feel pressured to join extra-curriculars for my resume.
+
+- intent: academic_pressure/p0035
+  examples: |
+    - I’m afraid to ask for help because I might look weak.
+
+- intent: academic_pressure/p0036
+  examples: |
+    - I’m having trouble balancing school and personal life.
+
+- intent: academic_pressure/p0037
+  examples: |
+    - I feel like my grades are the only thing that matters.
+
+- intent: academic_pressure/p0038
+  examples: |
+    - I’m scared to check my grades.
+
+- intent: academic_pressure/p0039
+  examples: |
+    - I get frustrated when I don’t get perfect scores.
+
+- intent: academic_pressure/p0040
+  examples: |
+    - I’m worried about keeping my scholarship if my grades drop.
+
+- intent: academic_pressure/p0041
+  examples: |
+    - I feel like giving up when things get hard at school.
+
+- intent: academic_pressure/p0042
+  examples: |
+    - I’m pressured to finish group work perfectly.
+
+- intent: academic_pressure/p0043
+  examples: |
+    - I’m scared of disappointing my teachers.
+
+- intent: academic_pressure/p0044
+  examples: |
+    - I can’t relax even during holidays because of school.
+
+- intent: academic_pressure/p0045
+  examples: |
+    - I’m anxious about not graduating on time.
+
+- intent: academic_pressure/p0046
+  examples: |
+    - I feel like my life revolves only around academics.
+
+- intent: academic_pressure/p0047
+  examples: |
+    - I don’t want to talk to anyone about my academic struggles.
+
+- intent: academic_pressure/p0048
+  examples: |
+    - I’m afraid to make mistakes in front of my classmates.
+
+
+
+
+
+
+
+- intent: relationship_issues/p0001
+  examples: |
+    - I always fight with my partner and it's exhausting.
+
+- intent: relationship_issues/p0002
+  examples: |
+    - My partner and I don’t talk like we used to.
+
+- intent: relationship_issues/p0003
+  examples: |
+    - I feel jealous when my partner talks to others.
+
+- intent: relationship_issues/p0004
+  examples: |
+    - I think my partner is losing interest in me.
+
+- intent: relationship_issues/p0005
+  examples: |
+    - I feel like I’m the only one putting effort into our relationship.
+
+- intent: relationship_issues/p0006
+  examples: |
+    - My partner doesn’t understand how stressed I am.
+
+- intent: relationship_issues/p0007
+  examples: |
+    - I feel like my partner controls my actions.
+
+- intent: relationship_issues/p0008
+  examples: |
+    - My partner gets angry easily and it scares me.
+
+- intent: relationship_issues/p0009
+  examples: |
+    - I feel alone even when I’m with my partner.
+
+- intent: relationship_issues/p0010
+  examples: |
+    - We barely spend time together because of our schedules.
+
+- intent: relationship_issues/p0011
+  examples: |
+    - My partner makes me feel insecure about myself.
+
+- intent: relationship_issues/p0012
+  examples: |
+    - I’m afraid my partner will leave me for someone else.
+
+- intent: relationship_issues/p0013
+  examples: |
+    - My partner doesn’t support my goals or ambitions.
+
+- intent: relationship_issues/p0014
+  examples: |
+    - We keep having the same arguments over and over.
+
+- intent: relationship_issues/p0015
+  examples: |
+    - I feel like I’m losing myself in this relationship.
+
+- intent: relationship_issues/p0016
+  examples: |
+    - My partner keeps secrets from me.
+
+- intent: relationship_issues/p0017
+  examples: |
+    - My partner doesn’t respect my boundaries.
+
+- intent: relationship_issues/p0018
+  examples: |
+    - My partner is always busy and I feel neglected.
+
+- intent: relationship_issues/p0019
+  examples: |
+    - My partner brings up my past mistakes in every argument.
+
+- intent: relationship_issues/p0020
+  examples: |
+    - I feel like my partner doesn’t listen to me.
+
+- intent: relationship_issues/p0021
+  examples: |
+    - My partner and I have different priorities.
+
+- intent: relationship_issues/p0022
+  examples: |
+    - My partner is jealous of my friends.
+
+- intent: relationship_issues/p0023
+  examples: |
+    - We have different plans for the future.
+
+- intent: relationship_issues/p0024
+  examples: |
+    - I’m not happy in my relationship but I’m afraid to leave.
+
+- intent: relationship_issues/p0025
+  examples: |
+    - My partner is always criticizing me.
+
+- intent: relationship_issues/p0026
+  examples: |
+    - My partner doesn’t want to talk about problems.
+
+- intent: relationship_issues/p0027
+  examples: |
+    - I feel like my partner takes me for granted.
+
+- intent: relationship_issues/p0028
+  examples: |
+    - My partner doesn’t apologize when they’re wrong.
+
+- intent: relationship_issues/p0029
+  examples: |
+    - My partner ignores me when we fight.
+
+- intent: relationship_issues/p0030
+  examples: |
+    - My partner flirts with other people and it bothers me.
+
+- intent: relationship_issues/p0031
+  examples: |
+    - I feel pressure to change for my partner.
+
+- intent: relationship_issues/p0032
+  examples: |
+    - I think my partner is cheating on me.
+
+- intent: relationship_issues/p0033
+  examples: |
+    - My partner makes fun of me in front of others.
+
+- intent: relationship_issues/p0034
+  examples: |
+    - My partner never wants to compromise.
+
+- intent: relationship_issues/p0035
+  examples: |
+    - My partner gets jealous of my achievements.
+
+- intent: relationship_issues/p0036
+  examples: |
+    - I feel anxious before seeing my partner.
+
+- intent: relationship_issues/p0037
+  examples: |
+    - My partner doesn’t include me in their plans.
+
+- intent: relationship_issues/p0038
+  examples: |
+    - My partner jokes about breaking up.
+
+- intent: relationship_issues/p0039
+  examples: |
+    - My partner lies about small things.
+
+- intent: relationship_issues/p0040
+  examples: |
+    - I’m always the one making an effort to fix things.
+
+- intent: relationship_issues/p0041
+  examples: |
+    - My partner doesn’t want to meet my friends or family.
+
+- intent: relationship_issues/p0042
+  examples: |
+    - My partner’s words sometimes hurt my feelings.
+
+- intent: relationship_issues/p0043
+  examples: |
+    - My partner is always on their phone when we’re together.
+
+- intent: relationship_issues/p0044
+  examples: |
+    - My partner wants to control who I talk to.
+
+- intent: relationship_issues/p0045
+  examples: |
+    - My partner is secretive about their social media.
+
+- intent: relationship_issues/p0046
+  examples: |
+    - My partner doesn’t seem interested in my life anymore.
+
+- intent: relationship_issues/p0047
+  examples: |
+    - My partner compares me to their ex.
+
+- intent: relationship_issues/p0048
+  examples: |
+    - My partner rarely shows affection.
+
+- intent: relationship_issues/p0049
+  examples: |
+    - I feel like I’m always apologizing.
+
+- intent: relationship_issues/p0050
+  examples: |
+    - My partner blames me for everything.
+
+
+- intent: low_self_esteem/p0001
+  examples: |
+    - I don’t feel good enough no matter how hard I try.
+
+- intent: low_self_esteem/p0002
+  examples: |
+    - I always compare myself to others and feel like I don’t measure up.
+
+- intent: low_self_esteem/p0003
+  examples: |
+    - I feel useless and like I don’t matter.
+
+- intent: low_self_esteem/p0004
+  examples: |
+    - I get nervous to speak up in class because I think people will judge me.
+
+- intent: low_self_esteem/p0005
+  examples: |
+    - I don’t think I’m attractive or interesting.
+
+- intent: low_self_esteem/p0006
+  examples: |
+    - I don’t think I’ll ever be successful.
+
+- intent: low_self_esteem/p0007
+  examples: |
+    - People rarely notice me and I feel invisible.
+
+- intent: low_self_esteem/p0008
+  examples: |
+    - I keep thinking I’m a failure.
+
+- intent: low_self_esteem/p0009
+  examples: |
+    - I don’t like looking at myself in the mirror.
+
+- intent: low_self_esteem/p0010
+  examples: |
+    - I feel like nobody really cares about me.
+
+- intent: low_self_esteem/p0011
+  examples: |
+    - I avoid trying new things because I’m scared I’ll mess up.
+
+- intent: low_self_esteem/p0012
+  examples: |
+    - I always feel like a burden to others.
+
+- intent: low_self_esteem/p0013
+  examples: |
+    - I struggle to accept compliments from people.
+
+- intent: low_self_esteem/p0014
+  examples: |
+    - I don’t think I’m as smart as everyone else.
+
+- intent: low_self_esteem/p0015
+  examples: |
+    - I feel uncomfortable in social situations.
+
+- intent: low_self_esteem/p0016
+  examples: |
+    - I think people secretly don’t like me.
+
+- intent: low_self_esteem/p0017
+  examples: |
+    - I always second-guess my decisions.
+
+- intent: low_self_esteem/p0018
+  examples: |
+    - I find it hard to believe in myself.
+
+- intent: low_self_esteem/p0019
+  examples: |
+    - I apologize for everything, even things that aren’t my fault.
+
+- intent: low_self_esteem/p0020
+  examples: |
+    - I avoid looking people in the eye.
+
+- intent: low_self_esteem/p0021
+  examples: |
+    - I don’t have confidence in my abilities.
+
+- intent: low_self_esteem/p0022
+  examples: |
+    - I feel awkward in group conversations.
+
+- intent: low_self_esteem/p0023
+  examples: |
+    - I think others see me as weak.
+
+- intent: low_self_esteem/p0024
+  examples: |
+    - I struggle to say no, even when I’m overwhelmed.
+
+- intent: low_self_esteem/p0025
+  examples: |
+    - I always expect the worst in situations.
+
+- intent: low_self_esteem/p0026
+  examples: |
+    - I downplay my achievements.
+
+- intent: low_self_esteem/p0027
+  examples: |
+    - I don’t feel like I have any special talents.
+
+- intent: low_self_esteem/p0028
+  examples: |
+    - I’m afraid to speak my mind.
+
+- intent: low_self_esteem/p0029
+  examples: |
+    - I feel embarrassed easily.
+
+- intent: low_self_esteem/p0030
+  examples: |
+    - I worry that I disappoint everyone.
+
+- intent: low_self_esteem/p0031
+  examples: |
+    - I feel like I’m not interesting to talk to.
+
+- intent: low_self_esteem/p0032
+  examples: |
+    - I think my friends only tolerate me.
+
+- intent: low_self_esteem/p0033
+  examples: |
+    - I don’t think I’ll ever fit in.
+
+- intent: low_self_esteem/p0034
+  examples: |
+    - I don’t trust myself to make good choices.
+
+- intent: low_self_esteem/p0035
+  examples: |
+    - I’m afraid to stand up for myself.
+
+- intent: low_self_esteem/p0036
+  examples: |
+    - I doubt that anyone would miss me if I disappeared.
+
+- intent: low_self_esteem/p0037
+  examples: |
+    - I get uncomfortable when people look at me.
+
+- intent: low_self_esteem/p0038
+  examples: |
+    - I’m scared of being rejected.
+
+- intent: low_self_esteem/p0039
+  examples: |
+    - I’m always apologizing for who I am.
+
+- intent: low_self_esteem/p0040
+  examples: |
+    - I find it hard to believe I deserve good things.
+
+- intent: low_self_esteem/p0041
+  examples: |
+    - I’m nervous to try out for clubs or activities.
+
+- intent: low_self_esteem/p0042
+  examples: |
+    - I never feel satisfied with myself.
+
+- intent: low_self_esteem/p0043
+  examples: |
+    - I always blame myself for problems.
+
+- intent: low_self_esteem/p0044
+  examples: |
+    - I think people don’t want me around.
+
+- intent: low_self_esteem/p0045
+  examples: |
+    - I struggle to accept praise.
+
+- intent: low_self_esteem/p0046
+  examples: |
+    - I’m afraid to take up space or speak out.
+
+
+
+
+
+
+
+
+
+- intent: loneliness/p0001
+  examples: |
+    - I always feel alone, even when I'm around people.
+
+- intent: loneliness/p0002
+  examples: |
+    - I don’t have anyone to talk to about my problems.
+
+- intent: loneliness/p0003
+  examples: |
+    - I feel invisible to everyone around me.
+
+- intent: loneliness/p0004
+  examples: |
+    - My friends are busy and I feel left out.
+
+- intent: loneliness/p0005
+  examples: |
+    - I just moved and don’t know anyone here.
+
+- intent: loneliness/p0006
+  examples: |
+    - I eat lunch alone almost every day.
+
+- intent: loneliness/p0007
+  examples: |
+    - I feel like nobody understands me.
+
+- intent: loneliness/p0008
+  examples: |
+    - I don't fit in with any group.
+
+- intent: loneliness/p0009
+  examples: |
+    - I miss my old friends and feel disconnected.
+
+- intent: loneliness/p0010
+  examples: |
+    - I feel like I’m always the outsider.
+
+- intent: loneliness/p0011
+  examples: |
+    - I have a hard time starting conversations.
+
+- intent: loneliness/p0012
+  examples: |
+    - I feel like everyone already has their group of friends.
+
+- intent: loneliness/p0013
+  examples: |
+    - I don't have anyone to spend time with on weekends.
+
+- intent: loneliness/p0014
+  examples: |
+    - I feel isolated because of my shyness.
+
+- intent: loneliness/p0015
+  examples: |
+    - My classmates don’t invite me to hang out.
+
+- intent: loneliness/p0016
+  examples: |
+    - I feel like nobody notices when I’m not around.
+
+- intent: loneliness/p0017
+  examples: |
+    - I only have online friends and no one to hang out with in person.
+
+- intent: loneliness/p0018
+  examples: |
+    - I feel left out when people make plans without me.
+
+- intent: loneliness/p0019
+  examples: |
+    - I don’t have anyone to call when I’m upset.
+
+- intent: loneliness/p0020
+  examples: |
+    - I wish I had someone to talk to before bed.
+
+- intent: loneliness/p0021
+  examples: |
+    - I always feel like a third wheel.
+
+- intent: loneliness/p0022
+  examples: |
+    - I feel like my family doesn’t understand me.
+
+- intent: loneliness/p0023
+  examples: |
+    - I don’t get invited to parties or gatherings.
+
+- intent: loneliness/p0024
+  examples: |
+    - I don’t know how to reach out to people.
+
+- intent: loneliness/p0025
+  examples: |
+    - I feel lonely even when I’m with my friends.
+
+- intent: loneliness/p0026
+  examples: |
+    - I feel like nobody really knows me.
+
+- intent: loneliness/p0027
+  examples: |
+    - I have trouble trusting people enough to get close.
+
+- intent: loneliness/p0028
+  examples: |
+    - I feel disconnected from everyone at school.
+
+- intent: loneliness/p0029
+  examples: |
+    - I spend most of my time alone.
+
+- intent: loneliness/p0030
+  examples: |
+    - I wish someone would check in on me.
+
+- intent: loneliness/p0031
+  examples: |
+    - I don’t feel like I belong anywhere.
+
+- intent: loneliness/p0032
+  examples: |
+    - I find it hard to trust new people.
+
+- intent: loneliness/p0033
+  examples: |
+    - I miss having close friendships.
+
+- intent: loneliness/p0034
+  examples: |
+    - I feel disconnected from my family.
+
+- intent: loneliness/p0035
+  examples: |
+    - I only talk to people online and not in person.
+
+- intent: loneliness/p0036
+  examples: |
+    - I feel left out of group chats and conversations.
+
+- intent: loneliness/p0037
+  examples: |
+    - I wish I had a best friend.
+
+- intent: loneliness/p0038
+  examples: |
+    - I don’t feel comfortable sharing my feelings with anyone.
+
+- intent: loneliness/p0039
+  examples: |
+    - I feel like I have to hide my true self.
+
+- intent: loneliness/p0040
+  examples: |
+    - I struggle to maintain friendships.
+
+- intent: loneliness/p0041
+  examples: |
+    - I’m afraid people will judge me if I reach out.
+
+- intent: loneliness/p0042
+  examples: |
+    - I feel like nobody notices my absence.
+
+- intent: loneliness/p0043
+  examples: |
+    - I have a hard time opening up to people.
+
+- intent: loneliness/p0044
+  examples: |
+    - I don’t know how to start making new friends.
+
+- intent: loneliness/p0045
+  examples: |
+    - I wish someone would invite me to join them.
+
+- intent: loneliness/p0046
+  examples: |
+    - I feel sad when I see others together and I’m alone.
+
+- intent: loneliness/p0047
+  examples: |
+    - I feel like I’ll always be alone.
+
+- intent: loneliness/p0048
+  examples: |
+    - I don’t feel comfortable in large groups.
+
+- intent: loneliness/p0049
+  examples: |
+    - I wish someone understood what I’m going through.
+
+
+
+
+
+
+
+- intent: family_problems/p0001
+  examples: |
+    - My parents are always fighting and it stresses me out.
+
+- intent: family_problems/p0002
+  examples: |
+    - I feel like I can’t talk to my family about anything.
+
+- intent: family_problems/p0003
+  examples: |
+    - My family doesn’t support my choices.
+
+- intent: family_problems/p0004
+  examples: |
+    - I feel pressured by my family to do things I don’t want.
+
+- intent: family_problems/p0005
+  examples: |
+    - My parents compare me to my siblings.
+
+- intent: family_problems/p0006
+  examples: |
+    - There’s always so much drama at home.
+
+- intent: family_problems/p0007
+  examples: |
+    - I feel like the black sheep in my family.
+
+- intent: family_problems/p0008
+  examples: |
+    - My parents don’t understand what I’m going through.
+
+- intent: family_problems/p0009
+  examples: |
+    - My family always criticizes me.
+
+- intent: family_problems/p0010
+  examples: |
+    - I feel responsible for my family’s problems.
+
+- intent: family_problems/p0011
+  examples: |
+    - My parents don’t respect my privacy.
+
+- intent: family_problems/p0012
+  examples: |
+    - My family ignores my feelings.
+
+- intent: family_problems/p0013
+  examples: |
+    - My family expects me to be perfect.
+
+- intent: family_problems/p0014
+  examples: |
+    - My family argues about money all the time.
+
+- intent: family_problems/p0015
+  examples: |
+    - I have to take care of younger siblings and it’s overwhelming.
+
+- intent: family_problems/p0016
+  examples: |
+    - My family doesn’t accept my identity.
+
+- intent: family_problems/p0017
+  examples: |
+    - I feel like I’m always walking on eggshells at home.
+
+- intent: family_problems/p0018
+  examples: |
+    - My parents don’t believe in mental health issues.
+
+- intent: family_problems/p0019
+  examples: |
+    - My parents make all my decisions for me.
+
+- intent: family_problems/p0020
+  examples: |
+    - I feel left out at home.
+
+- intent: family_problems/p0021
+  examples: |
+    - My family doesn’t listen to me.
+
+- intent: family_problems/p0022
+  examples: |
+    - My parents expect me to solve their problems.
+
+- intent: family_problems/p0023
+  examples: |
+    - My parents don’t let me make my own choices.
+
+- intent: family_problems/p0024
+  examples: |
+    - My family doesn’t appreciate what I do for them.
+
+- intent: family_problems/p0025
+  examples: |
+    - I feel scared when my parents yell.
+
+- intent: family_problems/p0026
+  examples: |
+    - My family never celebrates my achievements.
+
+- intent: family_problems/p0027
+  examples: |
+    - I have to hide my true self at home.
+
+- intent: family_problems/p0028
+  examples: |
+    - My family is always busy and I feel neglected.
+
+- intent: family_problems/p0029
+  examples: |
+    - My family jokes about things that hurt me.
+
+- intent: family_problems/p0030
+  examples: |
+    - My parents set unrealistic expectations for me.
+
+- intent: family_problems/p0031
+  examples: |
+    - My family has different values from me.
+
+- intent: family_problems/p0032
+  examples: |
+    - My parents use my mistakes against me.
+
+- intent: family_problems/p0033
+  examples: |
+    - My family doesn’t respect my boundaries.
+
+- intent: family_problems/p0034
+  examples: |
+    - I feel like an outsider in my own home.
+
+- intent: family_problems/p0035
+  examples: |
+    - My parents don’t support my dreams.
+
+- intent: family_problems/p0036
+  examples: |
+    - My family avoids talking about our problems.
+
+- intent: family_problems/p0037
+  examples: |
+    - My parents blame me for their arguments.
+
+- intent: family_problems/p0038
+  examples: |
+    - I have to hide my feelings at home.
+
+- intent: family_problems/p0039
+  examples: |
+    - My family gossips about me.
+
+- intent: family_problems/p0040
+  examples: |
+    - My parents force me to choose sides in their arguments.
+
+- intent: family_problems/p0041
+  examples: |
+    - My family dismisses my mental health struggles.
+
+- intent: family_problems/p0042
+  examples: |
+    - My family’s negativity affects my mood.
+
+- intent: family_problems/p0043
+  examples: |
+    - My parents never apologize for hurting me.
+
+- intent: family_problems/p0044
+  examples: |
+    - My family ignores my achievements but notices my mistakes.
+
+- intent: family_problems/p0045
+  examples: |
+    - I feel like my family is ashamed of me.
+
+- intent: family_problems/p0046
+  examples: |
+    - My parents treat my siblings better than me.
+
+- intent: family_problems/p0047
+  examples: |
+    - My family makes fun of my interests.
+
+- intent: family_problems/p0048
+  examples: |
+    - My parents threaten to disown me if I don’t do what they want.
+
+- intent: family_problems/p0049
+  examples: |
+    - My family’s expectations make me anxious.
+
+
+
+- intent: burnout/p0001
+  examples: |
+    - I feel so tired all the time, no matter how much I sleep.
+
+- intent: burnout/p0002
+  examples: |
+    - I’m losing motivation to do things I used to enjoy.
+
+- intent: burnout/p0003
+  examples: |
+    - I can’t focus on my studies at all anymore.
+
+- intent: burnout/p0004
+  examples: |
+    - I’m always stressed and I feel like I can’t catch up.
+
+- intent: burnout/p0005
+  examples: |
+    - I feel emotionally numb, like I don’t care about anything.
+
+- intent: burnout/p0006
+  examples: |
+    - I just want to give up on everything.
+
+- intent: burnout/p0007
+  examples: |
+    - I feel like I’m running on autopilot every day.
+
+- intent: burnout/p0008
+  examples: |
+    - No matter how much I do, it never feels like enough.
+
+- intent: burnout/p0009
+  examples: |
+    - I can’t remember the last time I really relaxed.
+
+- intent: burnout/p0010
+  examples: |
+    - I keep getting sick and I think it’s from stress.
+
+- intent: burnout/p0011
+  examples: |
+    - I’m always irritable and snap at people easily.
+
+- intent: burnout/p0012
+  examples: |
+    - I just want to disappear and not deal with anything.
+
+- intent: burnout/p0013
+  examples: |
+    - I dread waking up in the morning.
+
+- intent: burnout/p0014
+  examples: |
+    - My grades are slipping and I just don’t care anymore.
+
+- intent: burnout/p0015
+  examples: |
+    - I feel guilty for not being productive.
+
+- intent: burnout/p0016
+  examples: |
+    - I can’t sleep because I’m always thinking about my to-do list.
+
+- intent: burnout/p0017
+  examples: |
+    - I feel like I’m letting everyone down.
+
+- intent: burnout/p0018
+  examples: |
+    - I have headaches and body pains all the time.
+
+- intent: burnout/p0019
+  examples: |
+    - I feel like nothing excites me anymore.
+
+- intent: burnout/p0020
+  examples: |
+    - I’m losing touch with my friends because I’m always busy.
+
+- intent: burnout/p0021
+  examples: |
+    - I cry for no reason sometimes.
+
+- intent: burnout/p0022
+  examples: |
+    - I feel numb and disconnected from my emotions.
+
+- intent: burnout/p0023
+  examples: |
+    - I have no energy for anything, not even things I like.
+
+- intent: burnout/p0024
+  examples: |
+    - I feel like my work will never be done.
+
+- intent: burnout/p0025
+  examples: |
+    - I keep making mistakes because I’m so tired.
+
+- intent: burnout/p0026
+  examples: |
+    - I can’t remember things like I used to.
+
+- intent: burnout/p0027
+  examples: |
+    - I just don’t care about anything anymore.
+
+- intent: burnout/p0028
+  examples: |
+    - I push myself to keep going even when I’m exhausted.
+
+- intent: burnout/p0029
+  examples: |
+    - I get angry or frustrated over small things.
+
+- intent: burnout/p0030
+  examples: |
+    - I don’t feel like myself anymore.
+
+- intent: burnout/p0031
+  examples: |
+    - I just want everything to stop for a while.
+
+- intent: burnout/p0032
+  examples: |
+    - I feel like I can’t do anything right.
+
+- intent: burnout/p0033
+  examples: |
+    - I feel trapped by my responsibilities.
+
+- intent: burnout/p0034
+  examples: |
+    - I have no motivation to get out of bed.
+
+- intent: burnout/p0035
+  examples: |
+    - I get sick more often now.
+
+- intent: burnout/p0036
+  examples: |
+    - My body feels heavy and sluggish.
+
+- intent: burnout/p0037
+  examples: |
+    - I feel guilty for resting, even when I need it.
+
+- intent: burnout/p0038
+  examples: |
+    - I zone out and can’t pay attention in class.
+
+- intent: burnout/p0039
+  examples: |
+    - I don’t want to see or talk to anyone.
+
+- intent: burnout/p0040
+  examples: |
+    - I feel overwhelmed just thinking about my to-do list.
+
+- intent: burnout/p0041
+  examples: |
+    - I keep putting things off because I’m so tired.
+
+- intent: burnout/p0042
+  examples: |
+    - I don’t know how to relax anymore.
+
+- intent: burnout/p0043
+  examples: |
+    - I feel hopeless about the future.
+
+- intent: burnout/p0044
+  examples: |
+    - I’m afraid to ask for help because I don’t want to burden others.
+
+- intent: burnout/p0045
+  examples: |
+    - I feel stuck and nothing changes.
+
+- intent: burnout/p0046
+  examples: |
+    - I wish I could just run away from everything.
+
+- intent: substance_abuse/p0001
+  examples: |
+    - I think I’m drinking too much lately.
+
+- intent: substance_abuse/p0002
+  examples: |
+    - My friends pressure me to try drugs and I’m not sure what to do.
+
+- intent: substance_abuse/p0003
+  examples: |
+    - I use substances to escape stress and problems.
+
+- intent: substance_abuse/p0004
+  examples: |
+    - I regret things I do when I’m drunk or high.
+
+- intent: substance_abuse/p0005
+  examples: |
+    - I can’t stop thinking about using, even when I know it’s bad for me.
+
+- intent: substance_abuse/p0006
+  examples: |
+    - I drink or use drugs when I feel lonely or bored.
+
+- intent: substance_abuse/p0007
+  examples: |
+    - I’m worried I might be addicted.
+
+- intent: substance_abuse/p0008
+  examples: |
+    - My substance use is affecting my grades and relationships.
+
+- intent: substance_abuse/p0009
+  examples: |
+    - My family doesn’t know about my drinking or drug use.
+
+- intent: substance_abuse/p0010
+  examples: |
+    - I don’t like who I become when I’m using.
+
+- intent: substance_abuse/p0011
+  examples: |
+    - I use substances to help me sleep or relax.
+
+- intent: substance_abuse/p0012
+  examples: |
+    - My friends use all the time and I feel left out if I don’t join.
+
+- intent: substance_abuse/p0013
+  examples: |
+    - I’ve tried to quit but I always go back.
+
+- intent: substance_abuse/p0014
+  examples: |
+    - I use substances to feel more confident in social situations.
+
+- intent: substance_abuse/p0015
+  examples: |
+    - I’m scared of what will happen if I keep using.
+
+- intent: substance_abuse/p0016
+  examples: |
+    - I hide my substance use from everyone.
+
+- intent: substance_abuse/p0017
+  examples: |
+    - I spend too much money on alcohol or drugs.
+
+- intent: substance_abuse/p0018
+  examples: |
+    - I want to stop, but I don’t know how.
+
+- intent: substance_abuse/p0019
+  examples: |
+    - I use substances when I feel stressed about school.
+
+- intent: substance_abuse/p0020
+  examples: |
+    - My grades are dropping because of my substance use.
+
+- intent: substance_abuse/p0021
+  examples: |
+    - I worry my friends will judge me if I stop using.
+
+- intent: substance_abuse/p0022
+  examples: |
+    - I’m afraid to talk to anyone about my substance use.
+
+- intent: substance_abuse/p0023
+  examples: |
+    - I use substances to forget my problems.
+
+- intent: substance_abuse/p0024
+  examples: |
+    - I feel ashamed about my substance use.
+
+- intent: substance_abuse/p0025
+  examples: |
+    - My family has a history of addiction and I’m worried about myself.
+
+- intent: substance_abuse/p0026
+  examples: |
+    - I drink or use drugs to deal with social anxiety.
+
+- intent: substance_abuse/p0027
+  examples: |
+    - I’ve lost friends because of my substance use.
+
+- intent: substance_abuse/p0028
+  examples: |
+    - I keep promising myself I’ll stop, but I never do.
+
+- intent: substance_abuse/p0029
+  examples: |
+    - My substance use started just for fun, but now I feel like I need it.
+
+- intent: substance_abuse/p0030
+  examples: |
+    - I feel anxious when I don’t have access to substances.
+
+- intent: substance_abuse/p0031
+  examples: |
+    - My substance use is affecting my health.
+
+- intent: substance_abuse/p0032
+  examples: |
+    - I keep my substance use a secret from my partner.
+
+- intent: substance_abuse/p0033
+  examples: |
+    - I feel like I need substances to have fun.
+
+- intent: substance_abuse/p0034
+  examples: |
+    - I feel alone in my struggle with addiction.
+
+- intent: substance_abuse/p0035
+  examples: |
+    - I use substances to cope with family problems.
+
+- intent: substance_abuse/p0036
+  examples: |
+    - I’m scared I’ll get in trouble because of my substance use.
+
+- intent: substance_abuse/p0037
+  examples: |
+    - My substance use is affecting my job or extracurricular activities.
+
+- intent: substance_abuse/p0038
+  examples: |
+    - I can’t relax without substances.
+
+- intent: substance_abuse/p0039
+  examples: |
+    - I keep making promises to quit but can’t stick to them.
+
+- intent: substance_abuse/p0040
+  examples: |
+    - I feel like no one would understand what I’m going through.
+
+- intent: substance_abuse/p0041
+  examples: |
+    - My substance use is out of control.
+
+- intent: substance_abuse/p0042
+  examples: |
+    - I use substances to avoid feeling sad or anxious.
+
+- intent: substance_abuse/p0043
+  examples: |
+    - I feel like substances are the only thing that help me cope.
+
+- intent: substance_abuse/p0044
+  examples: |
+    - I’ve missed important events because of my substance use.
+
+- intent: substance_abuse/p0045
+  examples: |
+    - I want to change, but it feels impossible.
+
+- intent: substance_abuse/p0046
+  examples: |
+    - I feel embarrassed about my substance use.
+
+- intent: substance_abuse/p0047
+  examples: |
+    - My substance use has hurt people I care about.
+
+
+
+- intent: sleep_problems/p0001
+  examples: |
+    - I can’t fall asleep even when I’m really tired.
+
+- intent: sleep_problems/p0002
+  examples: |
+    - I keep waking up in the middle of the night.
+
+- intent: sleep_problems/p0003
+  examples: |
+    - I always feel tired, no matter how much I sleep.
+
+- intent: sleep_problems/p0004
+  examples: |
+    - My mind races with worries when I try to sleep.
+
+- intent: sleep_problems/p0005
+  examples: |
+    - I stay up late on my phone and can’t fall asleep.
+
+- intent: sleep_problems/p0006
+  examples: |
+    - I wake up feeling exhausted, even after a full night’s sleep.
+
+- intent: sleep_problems/p0007
+  examples: |
+    - I have trouble waking up in the morning.
+
+- intent: sleep_problems/p0008
+  examples: |
+    - I have nightmares almost every night.
+
+- intent: sleep_problems/p0009
+  examples: |
+    - I can’t sleep because of noise at home.
+
+- intent: sleep_problems/p0010
+  examples: |
+    - I get anxious at bedtime because I know I won’t sleep well.
+
+- intent: sleep_problems/p0011
+  examples: |
+    - I stay up all night to finish assignments.
+
+- intent: sleep_problems/p0012
+  examples: |
+    - I keep napping during the day and can’t sleep at night.
+
+- intent: sleep_problems/p0013
+  examples: |
+    - I can’t sleep because I’m worried about the future.
+
+- intent: sleep_problems/p0014
+  examples: |
+    - I keep having dreams about school stress.
+
+- intent: sleep_problems/p0015
+  examples: |
+    - I sleep at odd hours and can’t keep a regular schedule.
+
+- intent: sleep_problems/p0016
+  examples: |
+    - I feel restless at night and can’t get comfortable.
+
+- intent: sleep_problems/p0017
+  examples: |
+    - I wake up too early and can’t fall back asleep.
+
+- intent: sleep_problems/p0018
+  examples: |
+    - I use my phone in bed to distract myself, but I still can’t sleep.
+
+- intent: sleep_problems/p0019
+  examples: |
+    - My body feels tense when I try to relax at night.
+
+- intent: sleep_problems/p0020
+  examples: |
+    - I get headaches from not sleeping enough.
+
+- intent: sleep_problems/p0021
+  examples: |
+    - I always wake up feeling groggy.
+
+- intent: sleep_problems/p0022
+  examples: |
+    - I can’t sleep when I’m upset about something.
+
+- intent: sleep_problems/p0023
+  examples: |
+    - I sleep all day and stay up all night.
+
+- intent: sleep_problems/p0024
+  examples: |
+    - I can’t fall asleep without background noise.
+
+- intent: sleep_problems/p0025
+  examples: |
+    - I wake up to check my phone and can’t go back to sleep.
+
+- intent: sleep_problems/p0026
+  examples: |
+    - I get anxious about not getting enough sleep.
+
+- intent: sleep_problems/p0027
+  examples: |
+    - I feel restless even when I’m lying down.
+
+- intent: sleep_problems/p0028
+  examples: |
+    - I can’t stop thinking about my to-do list at night.
+
+- intent: sleep_problems/p0029
+  examples: |
+    - I feel more awake at night than during the day.
+
+- intent: sleep_problems/p0030
+  examples: |
+    - I keep tossing and turning for hours.
+
+- intent: sleep_problems/p0031
+  examples: |
+    - I have trouble falling asleep after using caffeine.
+
+- intent: sleep_problems/p0032
+  examples: |
+    - I wake up sweating or feeling hot at night.
+
+- intent: sleep_problems/p0033
+  examples: |
+    - I’m so tired that I nap during class.
+
+- intent: sleep_problems/p0034
+  examples: |
+    - I worry that my sleep issues are hurting my health.
+
+- intent: sleep_problems/p0035
+  examples: |
+    - I can’t sleep because I’m hungry at night.
+
+- intent: sleep_problems/p0036
+  examples: |
+    - I keep waking up from bad dreams.
+
+- intent: sleep_problems/p0037
+  examples: |
+    - I sleep in on weekends and can’t wake up for class.
+
+- intent: sleep_problems/p0038
+  examples: |
+    - My sleep schedule is messed up after exams.
+
+- intent: sleep_problems/p0039
+  examples: |
+    - I have trouble sleeping in a new place.
+
+- intent: sleep_problems/p0040
+  examples: |
+    - I get headaches from not sleeping well.
+
+- intent: sleep_problems/p0041
+  examples: |
+    - I keep waking up before my alarm.
+
+- intent: sleep_problems/p0042
+  examples: |
+    - I nap a lot but still feel tired.
+
+- intent: sleep_problems/p0043
+  examples: |
+    - I use sleep aids but they don’t always work.
+
+- intent: sleep_problems/p0044
+  examples: |
+    - I can’t fall asleep after a stressful day.
+
+- intent: sleep_problems/p0045
+  examples: |
+    - I feel like I never get enough rest.
+
+
+
+
+
+- intent: time_management/p0001
+  examples: |
+    - I can never finish my tasks on time.
+
+- intent: time_management/p0002
+  examples: |
+    - I always end up cramming the night before deadlines.
+
+- intent: time_management/p0003
+  examples: |
+    - I don’t know how to prioritize what’s important.
+
+- intent: time_management/p0004
+  examples: |
+    - I keep missing deadlines because I forget them.
+
+- intent: time_management/p0005
+  examples: |
+    - I get distracted easily and can’t focus.
+
+- intent: time_management/p0006
+  examples: |
+    - I feel overwhelmed by my schedule.
+
+- intent: time_management/p0007
+  examples: |
+    - I always feel like there’s not enough time in the day.
+
+- intent: time_management/p0008
+  examples: |
+    - I procrastinate and leave everything until the last minute.
+
+- intent: time_management/p0009
+  examples: |
+    - I can’t balance school, work, and personal life.
+
+- intent: time_management/p0010
+  examples: |
+    - I often forget about assignments until it’s too late.
+
+- intent: time_management/p0011
+  examples: |
+    - I start projects but never finish them.
+
+- intent: time_management/p0012
+  examples: |
+    - I try to do everything at once and end up doing nothing.
+
+- intent: time_management/p0013
+  examples: |
+    - I stay up late to finish work and feel tired all the time.
+
+- intent: time_management/p0014
+  examples: |
+    - I spend too much time on social media instead of studying.
+
+- intent: time_management/p0015
+  examples: |
+    - I feel stressed when my to-do list gets too long.
+
+- intent: time_management/p0016
+  examples: |
+    - I’m always running late for classes and meetings.
+
+- intent: time_management/p0017
+  examples: |
+    - I say yes to too many things and overcommit myself.
+
+- intent: time_management/p0018
+  examples: |
+    - I can’t seem to stick to any routine.
+
+- intent: time_management/p0019
+  examples: |
+    - I feel guilty taking breaks when I have a lot to do.
+
+- intent: time_management/p0020
+  examples: |
+    - I get sidetracked by other people’s requests.
+
+- intent: time_management/p0021
+  examples: |
+    - I keep forgetting about important events.
+
+- intent: time_management/p0022
+  examples: |
+    - I get stuck on small tasks and run out of time for bigger ones.
+
+- intent: time_management/p0023
+  examples: |
+    - I have trouble switching between different tasks.
+
+- intent: time_management/p0024
+  examples: |
+    - I feel behind even when I work hard.
+
+- intent: time_management/p0025
+  examples: |
+    - I spend too much time planning and not enough doing.
+
+- intent: time_management/p0026
+  examples: |
+    - I lose track of time when studying or working.
+
+- intent: time_management/p0027
+  examples: |
+    - I keep putting off things I don’t want to do.
+
+- intent: time_management/p0028
+  examples: |
+    - I feel anxious when I look at my schedule.
+
+- intent: time_management/p0029
+  examples: |
+    - I waste a lot of time deciding what to do next.
+
+- intent: time_management/p0030
+  examples: |
+    - I can’t say no when people ask for my help.
+
+- intent: time_management/p0031
+  examples: |
+    - I forget to take care of myself when I’m busy.
+
+- intent: time_management/p0032
+  examples: |
+    - I try to multitask but end up getting less done.
+
+- intent: time_management/p0033
+  examples: |
+    - I keep missing out on things I want to do.
+
+- intent: time_management/p0034
+  examples: |
+    - I don’t know how to organize my time.
+
+- intent: time_management/p0035
+  examples: |
+    - I get overwhelmed by big projects.
+
+- intent: time_management/p0036
+  examples: |
+    - I can’t relax because I’m always thinking about what’s next.
+
+- intent: time_management/p0037
+  examples: |
+    - I feel like I’m always rushing.
+
+- intent: time_management/p0038
+  examples: |
+    - I don’t have time for friends or hobbies.
+
+- intent: time_management/p0039
+  examples: |
+    - I find myself doing unimportant things instead of what matters.
+
+- intent: time_management/p0040
+  examples: |
+    - I get stuck trying to make things perfect.
+
+- intent: time_management/p0041
+  examples: |
+    - I keep forgetting what I was supposed to do.
+
+- intent: time_management/p0042
+  examples: |
+    - I lose track of my progress on long-term goals.
+
+- intent: time_management/p0043
+  examples: |
+    - I can’t find time to exercise or eat healthy.
+
+- intent: time_management/p0044
+  examples: |
+    - I struggle to stick to my plans.
+
+- intent: time_management/p0045
+  examples: |
+    - I waste time looking for things I need.
+
+- intent: time_management/p0046
+  examples: |
+    - I don’t know how to say no to new commitments.
+
+- intent: time_management/p0047
+  examples: |
+    - I forget to take breaks and end up exhausted.
+
+- intent: time_management/p0048
+  examples: |
+    - I feel like I’m always behind no matter what I do.
+
+
+ 
+
+
+
+- intent: financial_stress/p0001
+  examples: |
+    - I’m worried about not having enough money for tuition.
+
+- intent: financial_stress/p0002
+  examples: |
+    - My family is struggling to make ends meet.
+
+- intent: financial_stress/p0003
+  examples: |
+    - I can’t afford the materials required for my classes.
+
+- intent: financial_stress/p0004
+  examples: |
+    - I’m embarrassed about my financial situation.
+
+- intent: financial_stress/p0005
+  examples: |
+    - I have to choose between food and school expenses.
+
+- intent: financial_stress/p0006
+  examples: |
+    - My part-time job isn’t enough to cover my expenses.
+
+- intent: financial_stress/p0007
+  examples: |
+    - I feel guilty asking my family for money.
+
+- intent: financial_stress/p0008
+  examples: |
+    - I’m behind on my bills and don’t know what to do.
+
+- intent: financial_stress/p0009
+  examples: |
+    - I have to work long hours just to keep up.
+
+- intent: financial_stress/p0010
+  examples: |
+    - I’m stressed about paying rent every month.
+
+- intent: financial_stress/p0011
+  examples: |
+    - I worry I won’t be able to finish school because of money.
+
+- intent: financial_stress/p0012
+  examples: |
+    - I feel left out when my friends can afford things I can’t.
+
+- intent: financial_stress/p0013
+  examples: |
+    - I’m constantly worried about money.
+
+- intent: financial_stress/p0014
+  examples: |
+    - I skip meals to save money.
+
+- intent: financial_stress/p0015
+  examples: |
+    - My scholarship isn’t enough to cover my expenses.
+
+- intent: financial_stress/p0016
+  examples: |
+    - I feel pressure to help support my family.
+
+- intent: financial_stress/p0017
+  examples: |
+    - I’m worried about student loans after graduation.
+
+- intent: financial_stress/p0018
+  examples: |
+    - I can’t afford internet or a device for online classes.
+
+- intent: financial_stress/p0019
+  examples: |
+    - My parents lost their jobs and I don’t know what to do.
+
+- intent: financial_stress/p0020
+  examples: |
+    - I worry about unexpected expenses like medical bills.
+
+- intent: financial_stress/p0021
+  examples: |
+    - I have trouble managing my money.
+
+- intent: financial_stress/p0022
+  examples: |
+    - I wish I could save money, but I can’t.
+
+- intent: financial_stress/p0023
+  examples: |
+    - I get anxious every time I check my bank account.
+
+- intent: financial_stress/p0024
+  examples: |
+    - I can’t afford transportation to school.
+
+- intent: financial_stress/p0025
+  examples: |
+    - I can’t buy books or materials for class.
+
+- intent: financial_stress/p0026
+  examples: |
+    - I feel hopeless about my financial future.
+
+- intent: financial_stress/p0027
+  examples: |
+    - I have to skip social events because I can’t afford them.
+
+- intent: financial_stress/p0028
+  examples: |
+    - I feel like I’ll never get out of debt.
+
+- intent: financial_stress/p0029
+  examples: |
+    - I feel guilty spending money on myself.
+
+- intent: financial_stress/p0030
+  examples: |
+    - I can’t concentrate on schoolwork because of money worries.
+
+- intent: financial_stress/p0031
+  examples: |
+    - I feel jealous of classmates who don’t have money problems.
+
+- intent: financial_stress/p0032
+  examples: |
+    - I wish my family understood how stressed I am about money.
+
+- intent: financial_stress/p0033
+  examples: |
+    - I’m worried I won’t be able to pay for graduation fees.
+
+- intent: financial_stress/p0034
+  examples: |
+    - I’m embarrassed to talk about my financial situation.
+
+- intent: financial_stress/p0035
+  examples: |
+    - I worry I can’t support myself after graduation.
+
+- intent: financial_stress/p0036
+  examples: |
+    - I feel like my financial stress never ends.
+
+- intent: financial_stress/p0037
+  examples: |
+    - I can’t afford health care or insurance.
+
+- intent: financial_stress/p0038
+  examples: |
+    - I’m worried about supporting younger siblings.
+
+- intent: financial_stress/p0039
+  examples: |
+    - I don’t have enough money for basic needs.
+
+- intent: financial_stress/p0040
+  examples: |
+    - I feel alone in dealing with my financial problems.
+
+- intent: financial_stress/p0041
+  examples: |
+    - I’m scared I’ll have to drop out because of money.
+
+- intent: financial_stress/p0042
+  examples: |
+    - I want to help my family but don’t know how.
+
+- intent: financial_stress/p0043
+  examples: |
+    - I don’t know how to make a budget.
+
+- intent: financial_stress/p0044
+  examples: |
+    - I feel anxious about money all the time.
+
+- intent: financial_stress/p0045
+  examples: |
+    - I’m afraid to talk to my teachers about my financial situation.
+
+- intent: financial_stress/p0046
+  examples: |
+    - I’m frustrated that financial stress affects my relationships.
+
+- intent: financial_stress/p0047
+  examples: |
+    - I wish I didn’t have to worry about money all the time.
+
+- intent: financial_stress/p0048
+  examples: |
+    - I worry I’ll never be financially stable.
+
+
+
+
+
+
+- intent: bullying/p0001
+  examples: |
+    - People keep making fun of me at school.
+
+- intent: bullying/p0002
+  examples: |
+    - I get harassed online and it makes me feel awful.
+
+- intent: bullying/p0003
+  examples: |
+    - My classmates spread rumors about me.
+
+- intent: bullying/p0004
+  examples: |
+    - I feel scared to go to school because of bullying.
+
+- intent: bullying/p0005
+  examples: |
+    - I’m bullied because of my appearance.
+
+- intent: bullying/p0006
+  examples: |
+    - My friends stopped talking to me after others started bullying me.
+
+- intent: bullying/p0007
+  examples: |
+    - People call me names online and it hurts.
+
+- intent: bullying/p0008
+  examples: |
+    - I don’t know how to make the bullying stop.
+
+- intent: bullying/p0009
+  examples: |
+    - I get threatened by people at school.
+
+- intent: bullying/p0010
+  examples: |
+    - I feel completely alone because of bullying.
+
+- intent: bullying/p0011
+  examples: |
+    - People make jokes about things that hurt me.
+
+- intent: bullying/p0012
+  examples: |
+    - I’m bullied for my gender or identity.
+
+- intent: bullying/p0013
+  examples: |
+    - I feel powerless against bullies.
+
+- intent: bullying/p0014
+  examples: |
+    - I don’t want to go to class because of bullying.
+
+- intent: bullying/p0015
+  examples: |
+    - I’m bullied for my accent or the way I speak.
+
+- intent: bullying/p0016
+  examples: |
+    - People take photos of me without my permission.
+
+- intent: bullying/p0017
+  examples: |
+    - I get mean comments on my social media posts.
+
+- intent: bullying/p0018
+  examples: |
+    - I feel unsafe walking in certain areas of school.
+
+- intent: bullying/p0019
+  examples: |
+    - I’m bullied because of my family background.
+
+- intent: bullying/p0020
+  examples: |
+    - My grades are dropping because of bullying.
+
+- intent: bullying/p0021
+  examples: |
+    - I feel like nobody cares about what I’m going through.
+
+- intent: bullying/p0022
+  examples: |
+    - I’m bullied because of my religion or beliefs.
+
+- intent: bullying/p0023
+  examples: |
+    - I’m afraid the bullying will never stop.
+
+- intent: bullying/p0024
+  examples: |
+    - I get left out of group activities.
+
+- intent: bullying/p0025
+  examples: |
+    - My classmates spread lies about me online.
+
+- intent: bullying/p0026
+  examples: |
+    - I’m scared to stand up for myself.
+
+- intent: bullying/p0027
+  examples: |
+    - I cry when I think about how people treat me.
+
+- intent: bullying/p0028
+  examples: |
+    - People laugh at me for things I can’t control.
+
+- intent: bullying/p0029
+  examples: |
+    - I’m bullied for my disability.
+
+- intent: bullying/p0030
+  examples: |
+    - My teachers don’t notice the bullying.
+
+- intent: bullying/p0031
+  examples: |
+    - I wish I could disappear because of how I’m treated.
+
+- intent: bullying/p0032
+  examples: |
+    - I’m bullied for my clothes or what I have.
+
+- intent: bullying/p0033
+  examples: |
+    - People threaten to post embarrassing things about me.
+
+- intent: bullying/p0034
+  examples: |
+    - I feel hopeless that things will ever get better.
+
+- intent: bullying/p0035
+  examples: |
+    - I’ve lost interest in things because of bullying.
+
+- intent: bullying/p0036
+  examples: |
+    - I get blamed for things I didn’t do.
+
+- intent: bullying/p0037
+  examples: |
+    - I’m bullied in group chats with classmates.
+
+- intent: bullying/p0038
+  examples: |
+    - People laugh at me when I make mistakes.
+
+- intent: bullying/p0039
+  examples: |
+    - My family doesn’t know I’m being bullied.
+
+- intent: bullying/p0040
+  examples: |
+    - I’m afraid to go online because of bullies.
+
+- intent: bullying/p0041
+  examples: |
+    - I feel different and get picked on for it.
+
+- intent: bullying/p0042
+  examples: |
+    - People spread embarrassing photos or videos of me.
+
+- intent: bullying/p0043
+  examples: |
+    - I’m bullied for my grades or academic performance.
+
+- intent: bullying/p0044
+  examples: |
+    - I feel like nobody will help me.
+
+- intent: bullying/p0045
+  examples: |
+    - My mental health is suffering because of bullying.
+
+- intent: bullying/p0046
+  examples: |
+    - I get left out of group projects on purpose.
+
+- intent: bullying/p0047
+  examples: |
+    - I wish people would just leave me alone.
+
+- intent: bullying/p0048
+  examples: |
+    - People make fun of my accent, name, or culture.
+
+- intent: bullying/p0049
+  examples: |
+    - I feel like I have no one to turn to.
+
+
+ 
+
+
+- intent: grief_loss/p0001
+  examples: |
+    - I still miss my loved one who passed away.
+
+- intent: grief_loss/p0002
+  examples: |
+    - I can’t stop thinking about my breakup.
+
+- intent: grief_loss/p0003
+  examples: |
+    - I feel lost since things changed at home.
+
+- intent: grief_loss/p0004
+  examples: |
+    - I wish I could see my friend again.
+
+- intent: grief_loss/p0005
+  examples: |
+    - I’m struggling after losing my pet.
+
+- intent: grief_loss/p0006
+  examples: |
+    - I cry every time I think about my loss.
+
+- intent: grief_loss/p0007
+  examples: |
+    - I feel alone in my grief.
+
+- intent: grief_loss/p0008
+  examples: |
+    - My friends don’t understand what I’m going through.
+
+- intent: grief_loss/p0009
+  examples: |
+    - I feel guilty about things I said or didn’t say.
+
+- intent: grief_loss/p0010
+  examples: |
+    - I can’t focus on anything since my loss.
+
+- intent: grief_loss/p0011
+  examples: |
+    - I’m angry that things had to change.
+
+- intent: grief_loss/p0012
+  examples: |
+    - I don’t know how to move forward.
+
+- intent: grief_loss/p0013
+  examples: |
+    - I keep dreaming about the person I lost.
+
+- intent: grief_loss/p0014
+  examples: |
+    - I feel numb since everything changed.
+
+- intent: grief_loss/p0015
+  examples: |
+    - I can’t imagine life without them.
+
+- intent: grief_loss/p0016
+  examples: |
+    - I feel like I’m stuck in the past.
+
+- intent: grief_loss/p0017
+  examples: |
+    - I’m scared of forgetting the person I lost.
+
+- intent: grief_loss/p0018
+  examples: |
+    - I get overwhelmed by my emotions sometimes.
+
+- intent: grief_loss/p0019
+  examples: |
+    - I feel like I have to hide my feelings from others.
+
+- intent: grief_loss/p0020
+  examples: |
+    - I can’t stop thinking about the day everything changed.
+
+- intent: grief_loss/p0021
+  examples: |
+    - I lost motivation for things I used to love.
+
+- intent: grief_loss/p0022
+  examples: |
+    - I’m afraid to get close to people again.
+
+- intent: grief_loss/p0023
+  examples: |
+    - I wish I could have said goodbye.
+
+- intent: grief_loss/p0024
+  examples: |
+    - I feel like people expect me to be over it by now.
+
+- intent: grief_loss/p0025
+  examples: |
+    - I keep going over “what if” scenarios in my head.
+
+- intent: grief_loss/p0026
+  examples: |
+    - I feel exhausted by my grief.
+
+- intent: grief_loss/p0027
+  examples: |
+    - I feel like I’ll never be happy again.
+
+- intent: grief_loss/p0028
+  examples: |
+    - I have trouble talking about my loss.
+
+- intent: grief_loss/p0029
+  examples: |
+    - I feel like my grief is getting worse, not better.
+
+- intent: grief_loss/p0030
+  examples: |
+    - I’m struggling after moving to a new place.
+
+- intent: grief_loss/p0031
+  examples: |
+    - I feel like I can’t talk to anyone about what happened.
+
+- intent: grief_loss/p0032
+  examples: |
+    - I get sad at unexpected times.
+
+- intent: grief_loss/p0033
+  examples: |
+    - I feel angry at the person I lost.
+
+- intent: grief_loss/p0034
+  examples: |
+    - I don’t know how to support a friend who is grieving.
+
+- intent: grief_loss/p0035
+  examples: |
+    - I feel like everything reminds me of my loss.
+
+- intent: grief_loss/p0036
+  examples: |
+    - I avoid places or things that remind me of my loss.
+
+- intent: grief_loss/p0037
+  examples: |
+    - I’m struggling with losing a friendship.
+
+- intent: grief_loss/p0038
+  examples: |
+    - I get overwhelmed by special dates or anniversaries.
+
+- intent: grief_loss/p0039
+  examples: |
+    - I feel like I’m letting my loved one down by moving on.
+
+- intent: grief_loss/p0040
+  examples: |
+    - I can’t sleep since my loss.
+
+- intent: grief_loss/p0041
+  examples: |
+    - I’m afraid I’ll never feel “normal” again.
+
+- intent: grief_loss/p0042
+  examples: |
+    - I feel like my loss changed who I am.
+
+- intent: grief_loss/p0043
+  examples: |
+    - I wish I could have done more.
+
+- intent: grief_loss/p0044
+  examples: |
+    - I want to remember my loved one but don’t know how.
+
+- intent: grief_loss/p0045
+  examples: |
+    - I’m worried people are tired of hearing about my grief.
+
+- intent: grief_loss/p0046
+  examples: |
+    - I feel pressure to “be strong” for others.
+
+- intent: grief_loss/p0047
+  examples: |
+    - I get emotional in public and feel embarrassed.
+
+- intent: grief_loss/p0048
+  examples: |
+    - I don’t know if I’ll ever heal from my loss.
+
+- intent: crisis_minimizing
+  examples: |
+    - just kidding
+    - jk
+    - joke
+    - that's a joke
+    - i'm joking
+    - i was only kidding
+    - di tinuod
+    - joke lang
+    - atik lang
+    - char lang
+    - wala ra to
+    
+
+
+- intent: safety_critical
+  examples: |
+    - I want to end my life
+    - I plan to kill myself tonight
+    - I cut myself
+    - I overdosed
+    - I'm going to hurt someone
+    - my partner hits me
+    - there is sexual abuse at home
+    - they threatened to kill me
+    - I want to die
+    - I don't want to live anymore
+    - I'm thinking about suicide
+    - I took too many pills
+    - I'm afraid I might hurt someone
+    - my father hits me
+    - I'm being sexually abused
+    - they said they will kill me after class
+
+- regex: red_flag_terms
+  examples: |
+    - (?i)(kill myself|end my life|suicide|suicidal|overdose|od|hurt myself|hurt someone|sexual abuse|rape|goodbye note|plan to (die|kill))

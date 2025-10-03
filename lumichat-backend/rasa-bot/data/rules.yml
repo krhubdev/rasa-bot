@@ -1,0 +1,470 @@
+version: "3.1"
+
+rules:
+
+# ==== Retrieval + offer (keep) ====
+- rule: academic_pressure retrieval
+  steps:
+    - intent: academic_pressure
+    - action: utter_academic_pressure
+    - action: utter_offer_coping_academic_pressure
+
+- rule: anxiety retrieval
+  steps:
+    - intent: anxiety
+    - action: utter_anxiety
+    - action: utter_offer_coping_anxiety
+
+- rule: bullying retrieval
+  steps:
+    - intent: bullying
+    - action: utter_bullying
+    - action: utter_offer_coping_bullying
+
+- rule: burnout retrieval
+  steps:
+    - intent: burnout
+    - action: utter_burnout
+    - action: utter_offer_coping_burnout
+
+- rule: depression retrieval
+  steps:
+    - intent: depression
+    - action: utter_depression
+    - action: utter_offer_coping_depression
+
+- rule: family_problems retrieval
+  steps:
+    - intent: family_problems
+    - action: utter_family_problems
+    - action: utter_offer_coping_family_problems
+
+- rule: financial_stress retrieval
+  steps:
+    - intent: financial_stress
+    - action: utter_financial_stress
+    - action: utter_offer_coping_financial_stress
+
+- rule: grief_loss retrieval
+  steps:
+    - intent: grief_loss
+    - action: utter_grief_loss
+    - action: utter_offer_coping_grief_loss
+
+- rule: loneliness retrieval
+  steps:
+    - intent: loneliness
+    - action: utter_loneliness
+    - action: utter_offer_coping_loneliness
+
+- rule: low_self_esteem retrieval
+  steps:
+    - intent: low_self_esteem
+    - action: utter_low_self_esteem
+    - action: utter_offer_coping_low_self_esteem
+
+- rule: relationship_issues retrieval
+  steps:
+    - intent: relationship_issues
+    - action: utter_relationship_issues
+    - action: utter_offer_coping_relationship_issues
+
+- rule: sleep_problems retrieval
+  steps:
+    - intent: sleep_problems
+    - action: utter_sleep_problems
+    - action: utter_offer_coping_sleep_problems
+
+- rule: stress retrieval
+  steps:
+    - intent: stress
+    - action: utter_stress
+    - action: utter_offer_coping_stress
+
+- rule: substance_abuse retrieval
+  steps:
+    - intent: substance_abuse
+    - action: utter_substance_abuse
+    - action: utter_offer_coping_substance_abuse
+
+- rule: time_management retrieval
+  steps:
+    - intent: time_management
+    - action: utter_time_management
+    - action: utter_offer_coping_time_management
+
+
+# ==== Smalltalk / safety (keep) ====
+- rule: greet -> utter_greet
+  steps:
+    - intent: greet
+    - action: utter_greet
+
+- rule: thanks -> utter_thanks
+  steps:
+    - intent: thanks
+    - action: utter_thanks
+
+- rule: goodbye -> utter_goodbye
+  steps:
+    - intent: goodbye
+    - action: utter_goodbye
+
+- rule: safety critical -> utter_critical_keyword_appointment
+  steps:
+    - intent: safety_critical
+    - action: utter_critical_keyword_appointment
+    - action: action_listen
+
+- rule: After critical warning, user minimizes -> remind seriousness
+  steps:
+    - action: utter_critical_keyword_appointment
+    - intent: crisis_minimizing
+    - action: utter_crisis_minimizing_warning
+    - action: action_listen
+
+- rule: Book Appointment
+  steps:
+    - intent: book_appointment
+    - action: utter_book_appointment
+    - action: action_listen
+
+
+# ==== Coping YES/NO split rules (strict; one user intent per rule) ====
+
+# Academic pressure
+- rule: coping yes -> academic_pressure tips
+  steps:
+    - action: utter_offer_coping_academic_pressure
+    - intent: affirm
+    - action: utter_coping_academic_pressure
+    - action: utter_coping_done
+
+- rule: coping no -> academic_pressure referral
+  steps:
+    - action: utter_offer_coping_academic_pressure
+    - intent: deny
+    - action: utter_ack_no
+    - action: utter_offer_referral
+
+- rule: done after academic_pressure coping -> referral
+  steps:
+    - action: utter_coping_done
+    - intent: finish
+    - action: utter_offer_referral
+
+
+# Anxiety
+- rule: coping yes -> anxiety tips
+  steps:
+    - action: utter_offer_coping_anxiety
+    - intent: affirm
+    - action: utter_coping_anxiety
+    - action: utter_coping_done
+
+- rule: coping no -> anxiety referral
+  steps:
+    - action: utter_offer_coping_anxiety
+    - intent: deny
+    - action: utter_ack_no
+    - action: utter_offer_referral
+
+- rule: done after anxiety coping -> referral
+  steps:
+    - action: utter_coping_done
+    - intent: finish
+    - action: utter_offer_referral
+
+
+# Bullying
+- rule: coping yes -> bullying tips
+  steps:
+    - action: utter_offer_coping_bullying
+    - intent: affirm
+    - action: utter_coping_bullying
+    - action: utter_coping_done
+
+- rule: coping no -> bullying referral
+  steps:
+    - action: utter_offer_coping_bullying
+    - intent: deny
+    - action: utter_ack_no
+    - action: utter_offer_referral
+
+- rule: done after bullying coping -> referral
+  steps:
+    - action: utter_coping_done
+    - intent: finish
+    - action: utter_offer_referral
+
+
+# Burnout
+- rule: coping yes -> burnout tips
+  steps:
+    - action: utter_offer_coping_burnout
+    - intent: affirm
+    - action: utter_coping_burnout
+    - action: utter_coping_done
+
+- rule: coping no -> burnout referral
+  steps:
+    - action: utter_offer_coping_burnout
+    - intent: deny
+    - action: utter_ack_no
+    - action: utter_offer_referral
+
+- rule: done after burnout coping -> referral
+  steps:
+    - action: utter_coping_done
+    - intent: finish
+    - action: utter_offer_referral
+
+
+# Depression
+- rule: coping yes -> depression tips
+  steps:
+    - action: utter_offer_coping_depression
+    - intent: affirm
+    - action: utter_coping_depression
+    - action: utter_coping_done
+
+- rule: coping no -> depression referral
+  steps:
+    - action: utter_offer_coping_depression
+    - intent: deny
+    - action: utter_ack_no
+    - action: utter_offer_referral
+
+- rule: done after depression coping -> referral
+  steps:
+    - action: utter_coping_done
+    - intent: finish
+    - action: utter_offer_referral
+
+
+# Family problems
+- rule: coping yes -> family_problems tips
+  steps:
+    - action: utter_offer_coping_family_problems
+    - intent: affirm
+    - action: utter_coping_family_problems
+    - action: utter_coping_done
+
+- rule: coping no -> family_problems referral
+  steps:
+    - action: utter_offer_coping_family_problems
+    - intent: deny
+    - action: utter_ack_no
+    - action: utter_offer_referral
+
+- rule: done after family_problems coping -> referral
+  steps:
+    - action: utter_coping_done
+    - intent: finish
+    - action: utter_offer_referral
+
+
+# Financial stress
+- rule: coping yes -> financial_stress tips
+  steps:
+    - action: utter_offer_coping_financial_stress
+    - intent: affirm
+    - action: utter_coping_financial_stress
+    - action: utter_coping_done
+
+- rule: coping no -> financial_stress referral
+  steps:
+    - action: utter_offer_coping_financial_stress
+    - intent: deny
+    - action: utter_ack_no
+    - action: utter_offer_referral
+
+- rule: done after financial_stress coping -> referral
+  steps:
+    - action: utter_coping_done
+    - intent: finish
+    - action: utter_offer_referral
+
+
+# Grief/loss
+- rule: coping yes -> grief_loss tips
+  steps:
+    - action: utter_offer_coping_grief_loss
+    - intent: affirm
+    - action: utter_coping_grief_loss
+    - action: utter_coping_done
+
+- rule: coping no -> grief_loss referral
+  steps:
+    - action: utter_offer_coping_grief_loss
+    - intent: deny
+    - action: utter_ack_no
+    - action: utter_offer_referral
+
+- rule: done after grief_loss coping -> referral
+  steps:
+    - action: utter_coping_done
+    - intent: finish
+    - action: utter_offer_referral
+
+
+# Loneliness
+- rule: coping yes -> loneliness tips
+  steps:
+    - action: utter_offer_coping_loneliness
+    - intent: affirm
+    - action: utter_coping_loneliness
+    - action: utter_coping_done
+
+- rule: coping no -> loneliness referral
+  steps:
+    - action: utter_offer_coping_loneliness
+    - intent: deny
+    - action: utter_ack_no
+    - action: utter_offer_referral
+
+- rule: done after loneliness coping -> referral
+  steps:
+    - action: utter_coping_done
+    - intent: finish
+    - action: utter_offer_referral
+
+
+# Low self-esteem
+- rule: coping yes -> low_self_esteem tips
+  steps:
+    - action: utter_offer_coping_low_self_esteem
+    - intent: affirm
+    - action: utter_coping_low_self_esteem
+    - action: utter_coping_done
+
+- rule: coping no -> low_self_esteem referral
+  steps:
+    - action: utter_offer_coping_low_self_esteem
+    - intent: deny
+    - action: utter_ack_no
+    - action: utter_offer_referral
+
+- rule: done after low_self_esteem coping -> referral
+  steps:
+    - action: utter_coping_done
+    - intent: finish
+    - action: utter_offer_referral
+
+
+# Relationship issues
+- rule: coping yes -> relationship_issues tips
+  steps:
+    - action: utter_offer_coping_relationship_issues
+    - intent: affirm
+    - action: utter_coping_relationship_issues
+    - action: utter_coping_done
+
+- rule: coping no -> relationship_issues referral
+  steps:
+    - action: utter_offer_coping_relationship_issues
+    - intent: deny
+    - action: utter_ack_no
+    - action: utter_offer_referral
+
+- rule: done after relationship_issues coping -> referral
+  steps:
+    - action: utter_coping_done
+    - intent: finish
+    - action: utter_offer_referral
+
+
+# Sleep problems
+- rule: coping yes -> sleep_problems tips
+  steps:
+    - action: utter_offer_coping_sleep_problems
+    - intent: affirm
+    - action: utter_coping_sleep_problems
+    - action: utter_coping_done
+
+- rule: coping no -> sleep_problems referral
+  steps:
+    - action: utter_offer_coping_sleep_problems
+    - intent: deny
+    - action: utter_ack_no
+    - action: utter_offer_referral
+
+- rule: done after sleep_problems coping -> referral
+  steps:
+    - action: utter_coping_done
+    - intent: finish
+    - action: utter_offer_referral
+
+
+# Stress
+- rule: coping yes -> stress tips
+  steps:
+    - action: utter_offer_coping_stress
+    - intent: affirm
+    - action: utter_coping_stress
+    - action: utter_coping_done
+
+- rule: coping no -> stress referral
+  steps:
+    - action: utter_offer_coping_stress
+    - intent: deny
+    - action: utter_ack_no
+    - action: utter_offer_referral
+
+- rule: done after stress coping -> referral
+  steps:
+    - action: utter_coping_done
+    - intent: finish
+    - action: utter_offer_referral
+
+
+# Substance abuse
+- rule: coping yes -> substance_abuse tips
+  steps:
+    - action: utter_offer_coping_substance_abuse
+    - intent: affirm
+    - action: utter_coping_substance_abuse
+    - action: utter_coping_done
+
+- rule: coping no -> substance_abuse referral
+  steps:
+    - action: utter_offer_coping_substance_abuse
+    - intent: deny
+    - action: utter_ack_no
+    - action: utter_offer_referral
+
+- rule: done after substance_abuse coping -> referral
+  steps:
+    - action: utter_coping_done
+    - intent: finish
+    - action: utter_offer_referral
+
+
+# Time management
+- rule: coping yes -> time_management tips
+  steps:
+    - action: utter_offer_coping_time_management
+    - intent: affirm
+    - action: utter_coping_time_management
+    - action: utter_coping_done
+
+- rule: coping no -> time_management referral
+  steps:
+    - action: utter_offer_coping_time_management
+    - intent: deny
+    - action: utter_ack_no
+    - action: utter_offer_referral
+
+- rule: done after time_management coping -> referral
+  steps:
+    - action: utter_coping_done
+    - intent: finish
+    - action: utter_offer_referral
+
+
+# === Referral follow-ups ===
+- rule: referral no -> ok
+  steps:
+    - action: utter_offer_referral
+    - intent: deny
+    - action: utter_ok_no_referral

@@ -1,0 +1,40 @@
+recipe: default.v1
+language: en
+
+pipeline:
+- name: WhitespaceTokenizer
+- name: RegexFeaturizer
+- name: LexicalSyntacticFeaturizer
+- name: CountVectorsFeaturizer                # word-level BoW
+- name: CountVectorsFeaturizer                # char n-grams (helps typos & short prompts)
+  analyzer: char_wb
+  min_ngram: 3
+  max_ngram: 6
+- name: DIETClassifier
+  epochs: 80
+  constrain_similarities: true
+  batch_size: [64, 256]
+  learning_rate: 0.001
+  dropout: 0.2
+- name: ResponseSelector
+  epochs: 220                                 # higher to separate numbered prompts
+  constrain_similarities: true
+  batch_size: [64, 256]
+  learning_rate: 0.001
+  dropout: 0.2
+  ranking_length: 5
+- name: EntitySynonymMapper
+- name: FallbackClassifier                    # friendly but safe
+  threshold: 0.30
+  ambiguity_threshold: 0.02
+
+policies:
+- name: RulePolicy
+  enable_fallback_prediction: true
+  core_fallback_threshold: 0.15
+  core_fallback_action_name: "action_default_fallback"
+- name: MemoizationPolicy
+- name: TEDPolicy
+  epochs: 50
+  constrain_similarities: true
+assistant_id: 20250920-074924-forward-grove

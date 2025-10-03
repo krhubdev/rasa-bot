@@ -1,0 +1,16 @@
+{
+  "0": "affirm",
+  "1": "ask_hotline",
+  "2": "ask_privacy",
+  "3": "book_appointment",
+  "4": "bot_challenge",
+  "5": "deny",
+  "6": "goodbye",
+  "7": "greet",
+  "8": "mood_anxious",
+  "9": "mood_happy",
+  "10": "mood_sad",
+  "11": "mood_stressed",
+  "12": "out_of_scope",
+  "13": "suicide_disclosure"
+}

@@ -1,0 +1,77 @@
+{
+  "type": "MaxHistoryTrackerFeaturizer",
+  "state_featurizer": {
+    "action_texts": [],
+    "entity_tag_specs": [],
+    "feature_states": {
+      "intent": {
+        "affirm": 0,
+        "back": 1,
+        "book_appointment": 2,
+        "crisis_help": 3,
+        "deny": 4,
+        "express_anxiety": 5,
+        "express_happiness": 6,
+        "express_sadness": 7,
+        "express_stress": 8,
+        "goodbye": 9,
+        "greet": 10,
+        "nlu_fallback": 11,
+        "out_of_scope": 12,
+        "restart": 13,
+        "session_start": 14,
+        "smalltalk": 15,
+        "thank": 16
+      },
+      "action_name": {
+        "action_listen": 0,
+        "action_restart": 1,
+        "action_session_start": 2,
+        "action_default_fallback": 3,
+        "action_deactivate_loop": 4,
+        "action_revert_fallback_events": 5,
+        "action_default_ask_affirmation": 6,
+        "action_default_ask_rephrase": 7,
+        "action_two_stage_fallback": 8,
+        "action_unlikely_intent": 9,
+        "action_back": 10,
+        "...": 11,
+        "action_extract_slots": 12,
+        "action_offer_appointment_link": 13,
+        "action_submit_appointment": 14,
+        "validate_appointment_form": 15,
+        "utter_ask_appointment_date": 16,
+        "utter_ask_appointment_time": 17,
+        "utter_ask_consent": 18,
+        "utter_celebrate": 19,
+        "utter_crisis_hotlines": 20,
+        "utter_crisis_intro": 21,
+        "utter_crisis_next_steps": 22,
+        "utter_empathy_anxious": 23,
+        "utter_empathy_sad": 24,
+        "utter_empathy_stressed": 25,
+        "utter_fallback": 26,
+        "utter_goodbye": 27,
+        "utter_greet": 28,
+        "utter_out_of_scope": 29,
+        "utter_smalltalk_default": 30,
+        "utter_thanks": 31,
+        "appointment_form": 32
+      },
+      "entities": {
+        "date": 0,
+        "time": 1
+      },
+      "slots": {
+        "appointment_date_0": 0,
+        "appointment_time_0": 1,
+        "consent_0": 2
+      },
+      "active_loop": {
+        "appointment_form": 0
+      }
+    }
+  },
+  "remove_duplicates": true,
+  "max_history": null
+}

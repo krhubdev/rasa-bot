@@ -1,0 +1,14 @@
+
+
+
+
+#RASA RUN WITH UI
+rasa run --enable-api --cors "*" -p 5005
+
+python generate_stories_yml.py --out data/number_generator.yml range `
+>>   --prefix anxiety/p `
+>>   --start 1 `
+>>   --end 10 ` 
+>>   --zero-pad 4 `
+>>   --utter-prefix utter_anxiety/p `
+>>   --story-prefix anxiety

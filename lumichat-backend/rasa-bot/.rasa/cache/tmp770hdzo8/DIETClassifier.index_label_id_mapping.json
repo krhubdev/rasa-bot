@@ -1,0 +1,15 @@
+{
+  "0": "affirm",
+  "1": "book_appointment",
+  "2": "crisis_help",
+  "3": "deny",
+  "4": "express_anxiety",
+  "5": "express_happiness",
+  "6": "express_sadness",
+  "7": "express_stress",
+  "8": "goodbye",
+  "9": "greet",
+  "10": "out_of_scope",
+  "11": "smalltalk",
+  "12": "thank"
+}

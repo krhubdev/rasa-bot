@@ -1,0 +1,60 @@
+{
+  "lookup": {
+    "rules": {
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"nlu_fallback\"}}]": "utter_fallback",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"nlu_fallback\"}}, {\"prev_action\": {\"action_name\": \"utter_fallback\"}, \"user\": {\"intent\": \"nlu_fallback\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"express_happiness\"}}]": "utter_celebrate",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"express_happiness\"}}, {\"prev_action\": {\"action_name\": \"utter_celebrate\"}, \"user\": {\"intent\": \"express_happiness\"}}]": "action_listen",
+      "[{\"active_loop\": {\"name\": \"appointment_form\"}, \"prev_action\": {\"action_name\": \"utter_ask_appointment_date\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"thank\"}}]": "utter_thanks",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"thank\"}}, {\"prev_action\": {\"action_name\": \"utter_thanks\"}, \"user\": {\"intent\": \"thank\"}}]": "action_listen",
+      "[{\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"appointment_form\"}}]": "action_submit_appointment",
+      "[{\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"appointment_form\"}}, {\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"action_submit_appointment\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"greet\"}}]": "utter_greet",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"greet\"}}, {\"prev_action\": {\"action_name\": \"utter_greet\"}, \"user\": {\"intent\": \"greet\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"express_anxiety\"}}]": "utter_empathy_anxious",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"express_anxiety\"}}, {\"prev_action\": {\"action_name\": \"utter_empathy_anxious\"}, \"user\": {\"intent\": \"express_anxiety\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"book_appointment\"}}]": "appointment_form",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"book_appointment\"}}, {\"active_loop\": {\"name\": \"appointment_form\"}, \"prev_action\": {\"action_name\": \"appointment_form\"}, \"user\": {\"intent\": \"book_appointment\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"express_stress\"}}]": "utter_empathy_stressed",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"express_stress\"}}, {\"prev_action\": {\"action_name\": \"utter_empathy_stressed\"}, \"user\": {\"intent\": \"express_stress\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"smalltalk\"}}]": "utter_smalltalk_default",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"smalltalk\"}}, {\"prev_action\": {\"action_name\": \"utter_smalltalk_default\"}, \"user\": {\"intent\": \"smalltalk\"}}]": "action_listen",
+      "[{\"active_loop\": {\"name\": \"appointment_form\"}, \"prev_action\": {\"action_name\": \"utter_ask_appointment_time\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"out_of_scope\"}}]": "utter_out_of_scope",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"out_of_scope\"}}, {\"prev_action\": {\"action_name\": \"utter_out_of_scope\"}, \"user\": {\"intent\": \"out_of_scope\"}}]": "action_listen",
+      "[{\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"crisis_help\"}}]": "utter_crisis_intro",
+      "[{\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"crisis_help\"}}, {\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"utter_crisis_intro\"}, \"user\": {\"intent\": \"crisis_help\"}}]": "utter_crisis_hotlines",
+      "[{\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"crisis_help\"}}, {\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"utter_crisis_intro\"}, \"user\": {\"intent\": \"crisis_help\"}}, {\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"utter_crisis_hotlines\"}, \"user\": {\"intent\": \"crisis_help\"}}]": "utter_crisis_next_steps",
+      "[{\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"crisis_help\"}}, {\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"utter_crisis_intro\"}, \"user\": {\"intent\": \"crisis_help\"}}, {\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"utter_crisis_hotlines\"}, \"user\": {\"intent\": \"crisis_help\"}}, {\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"utter_crisis_next_steps\"}, \"user\": {\"intent\": \"crisis_help\"}}]": "action_offer_appointment_link",
+      "[{\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"crisis_help\"}}, {\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"utter_crisis_intro\"}, \"user\": {\"intent\": \"crisis_help\"}}, {\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"utter_crisis_hotlines\"}, \"user\": {\"intent\": \"crisis_help\"}}, {\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"utter_crisis_next_steps\"}, \"user\": {\"intent\": \"crisis_help\"}}, {\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"action_offer_appointment_link\"}, \"user\": {\"intent\": \"crisis_help\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"goodbye\"}}]": "utter_goodbye",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"goodbye\"}}, {\"prev_action\": {\"action_name\": \"utter_goodbye\"}, \"user\": {\"intent\": \"goodbye\"}}]": "action_listen",
+      "[{\"active_loop\": {\"name\": \"appointment_form\"}, \"prev_action\": {\"action_name\": \"utter_ask_consent\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"express_sadness\"}}]": "utter_empathy_sad",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"express_sadness\"}}, {\"prev_action\": {\"action_name\": \"utter_empathy_sad\"}, \"user\": {\"intent\": \"express_sadness\"}}]": "action_listen"
+    },
+    "rule_only_slots": [],
+    "rule_only_loops": [],
+    "rules_for_loop_unhappy_path": {
+      "[{\"active_loop\": {\"name\": \"appointment_form\"}, \"prev_action\": {\"action_name\": \"utter_ask_appointment_date\"}}]": "do_not_predict_loop_action",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}}, {\"active_loop\": {\"name\": \"appointment_form\"}, \"prev_action\": {\"action_name\": \"appointment_form\"}, \"user\": {\"intent\": \"book_appointment\"}}]": "do_not_predict_loop_action",
+      "[{\"active_loop\": {\"name\": \"appointment_form\"}, \"prev_action\": {\"action_name\": \"utter_ask_appointment_time\"}}]": "do_not_predict_loop_action",
+      "[{\"active_loop\": {\"name\": \"appointment_form\"}, \"prev_action\": {\"action_name\": \"utter_ask_consent\"}}]": "do_not_predict_loop_action",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}}, {\"active_loop\": {\"name\": \"appointment_form\"}, \"prev_action\": {\"action_name\": \"utter_goodbye\"}, \"user\": {\"intent\": \"deny\"}}]": "do_not_predict_loop_action"
+    },
+    "rules_not_in_stories": [
+      "predicting default action with intent restart",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"nlu_fallback\"}}, {\"prev_action\": {\"action_name\": \"utter_fallback\"}, \"user\": {\"intent\": \"nlu_fallback\"}}]",
+      "[{\"active_loop\": {\"name\": \"appointment_form\"}, \"prev_action\": {\"action_name\": \"utter_ask_appointment_time\"}}]",
+      "handling active loops and forms - appointment_form",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"out_of_scope\"}}]",
+      "[{\"active_loop\": {\"name\": \"appointment_form\"}, \"prev_action\": {\"action_name\": \"utter_ask_consent\"}}]",
+      "predicting default action with intent back",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"out_of_scope\"}}, {\"prev_action\": {\"action_name\": \"utter_out_of_scope\"}, \"user\": {\"intent\": \"out_of_scope\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"nlu_fallback\"}}]",
+      "[{\"active_loop\": {\"name\": \"appointment_form\"}, \"prev_action\": {\"action_name\": \"utter_ask_appointment_date\"}}]",
+      "predicting default action with intent session_start"
+    ]
+  }
+}
